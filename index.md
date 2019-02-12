@@ -1,6 +1,6 @@
 ---
 # Page settings
-layout: homepage # Choose layout: "default", "Salesforce", "homepage" or "documentation-archive"
+layout: homepage # Choose layout: "default", "homepage" or "documentation-archive"
 title: # Define a title of your page
 description: # Define a description of your page
 keywords: # Define keywords for search engines
