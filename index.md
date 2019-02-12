@@ -4,9 +4,9 @@
 
 [Proyecto 01](Salesforce "Doc 01")   
 
-[Proyecto 02](Arquitectura de Software "Doc 02")   
+[Proyecto 02](Arquitectura "Doc 02")   
 
-[Proyecto 03](Infraestructura de Sistemas "Doc 03")
+[Proyecto 03](Infraestructura "Doc 03")
 
 You can use the [editor on GitHub](https://github.com/abeltranes/abeltranes.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
