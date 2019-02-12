@@ -2,8 +2,8 @@
 
 [page1](2019-02-12-your-filename "hola caracola")
 
-[Proyecto 01](Salesforce "Doc 01")
-[Proyecto 02](Arquitectura de Software "Doc 02")
+[Proyecto 01](Salesforce "Doc 01")  
+[Proyecto 02](Arquitectura de Software "Doc 02")  
 [Proyecto 03](Infraestructura de Sistemas "Doc 03")
 
 You can use the [editor on GitHub](https://github.com/abeltranes/abeltranes.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
