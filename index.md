@@ -7,8 +7,8 @@ keywords: # Define keywords for search engines
 
 # Hero section 
 hero:
-    title: Hero section — Title (Documentacion) 
-    text: Hero section — Text (Documentation)
+    title: Hero section — Title 
+    text: Hero section — Text 
     background_image: # Paste image URL to display image in background of hero section
     buttons: # Add buttons below, there are examples with all available options
         - label: Button — Filled with icon
