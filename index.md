@@ -5,9 +5,9 @@ title: # Define a title of your page
 description: # Define a description of your page
 keywords: # Define keywords for search engines
 
-# Hero section (Documentacion)
+# Hero section 
 hero:
-    title: Hero section — Title
+    title: Hero section — Title (Documentacion)
     text: Hero section — Text
     background_image: # Paste image URL to display image in background of hero section
     buttons: # Add buttons below, there are examples with all available options
