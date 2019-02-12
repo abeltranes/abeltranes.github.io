@@ -4,7 +4,7 @@
 
 [Proyecto 01](Salesforce "Doc 01")   
 
-[Proyecto 02](Arquitectura de Software "Doc 02")   
+[Proyecto 02](Arquitectura_de_Software "Doc 02")   
 
 [Proyecto 03](Infraestructura de Sistemas "Doc 03")
 
