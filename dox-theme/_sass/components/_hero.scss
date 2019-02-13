@@ -9,6 +9,7 @@
 .c-hero--has-bg-image {
 	background-size: contain;
 	background-position: center;
+	background-repeat-y: no-repeat;
 
 	&::before {
 		content: '';
