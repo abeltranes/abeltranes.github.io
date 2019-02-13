@@ -8,22 +8,27 @@ keywords: # Define keywords for search engines
 # Hero section 
 hero:
     title: Hero section — Title 
-    text: Hero section — Text 
+    text: Enlaces de integrantes del proyecto 
     background_image: https://www.vectoritcgroup.com/wp-content/uploads/2018/06/logo-vector.svg # Paste image URL to display image in background of hero section
     buttons: # Add buttons below, there are examples with all available options
-        - label: Web Vector ITC Group
+        - label: Web - Vector ITC Group
           url: https://www.vectoritcgroup.com/
           external_url: true # Set to "false" if you're pointing to inner page
           style: filled # Choose style: "filled" or "bordered"
           icon: music # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
-        - label: Button — Bordered with icon
+        - label: Web - Telepizza
+          url: https://www.telepizza.es/
+          external_url: true
+          style: filled
+          icon: music
+        - label: Documentacion
           url: /documentation
           external_url: false
           style: bordered
           icon: music
     download_link: # Set small download link placed below buttons
-        label: Download — v4.0.0
-        url: https://example.com
+        label: Vector ITC Group & Telepizza
+        url: https://www.vectoritcgroup.com/?s=telepizza
 
 # Features section
 features:
