@@ -40,7 +40,7 @@ defaults:
             type: 'documentation'
         values:
             layout: 'documentation-single'
-            layout: 'Salesforce'
+           
 
 # SASS settings
 sass:
