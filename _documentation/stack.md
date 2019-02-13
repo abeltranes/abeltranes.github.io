@@ -1,18 +1,18 @@
 ---
-
+title: Stackedit
+description: Prueba para conectar Stackedit y Github
+keywords: null
+order: 4
+comments: false
+hero:
+  title: Stack — Title
+  text: Stack — Text
+published: true
 
 ---
 
 <hr>
-<h2 id="title-stackeditdescription-prueba-para-conectar-stackedit-y-githubkeywords-nullorder-4comments-falseherotitle-stack-—-titletext-stack-—-textpublished-true">title: Stackedit<br>
-description: Prueba para conectar Stackedit y Github<br>
-keywords: null<br>
-order: 4<br>
-comments: false<br>
-hero:<br>
-title: Stack — Title<br>
-text: Stack — Text<br>
-published: true</h2>
+
 <h1 id="doc-de-telepizza">Doc de Telepizza</h1>
 <p>Hi! I’m your first Markdown file in <strong>StackEdit</strong>. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the <strong>file explorer</strong> on the left corner of the navigation bar.</p>
 <h1 id="pizzas">Pizzas</h1>
