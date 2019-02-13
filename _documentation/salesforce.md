@@ -1,6 +1,6 @@
 ---
 title: Salesforce
-description: Documentacion de la plataforma Salesforce
+description: Documentación de la plataforma Salesforce
 keywords: null
 order: 1
 comments: false
