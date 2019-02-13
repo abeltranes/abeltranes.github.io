@@ -9,7 +9,7 @@ keywords: # Define keywords for search engines
 hero:
     title: Hero section — Title 
     text: Hero section — Text 
-    background_image: # Paste image URL to display image in background of hero section
+    background_image: https://www.vectoritcgroup.com/wp-content/uploads/2018/06/logo-vector.svg # Paste image URL to display image in background of hero section
     buttons: # Add buttons below, there are examples with all available options
         - label: Button — Filled with icon
           url: http://example.com
