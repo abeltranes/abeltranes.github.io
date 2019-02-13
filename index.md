@@ -15,17 +15,17 @@ hero:
           url: https://www.vectoritcgroup.com/
           external_url: true # Set to "false" if you're pointing to inner page
           style: filled # Choose style: "filled" or "bordered"
-          icon: music # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
+          icon: award # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
         - label: Web - Telepizza
           url: https://www.telepizza.es/
           external_url: true
           style: filled
-          icon: music
+          icon: pie-chart
         - label: Documentacion
           url: /documentation
           external_url: false
           style: bordered
-          icon: music
+          icon: book-open
     download_link: # Set small download link placed below buttons
         label: Vector ITC Group & Telepizza
         url: https://www.vectoritcgroup.com/?s=telepizza
