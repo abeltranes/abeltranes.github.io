@@ -7,7 +7,7 @@ dox:
     header:
         logo:
             text: Documentacion de Proyectos
-            image: https://www.vectoritcgroup.com/wp-content/uploads/2018/06/logo-vector.svg
+            image:
         nav:
             - item_name: Homepage
               item_url: /
