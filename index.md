@@ -15,7 +15,7 @@ hero:
           url: http://example.com
           external_url: true # Set to "false" if you're pointing to inner page
           style: filled # Choose style: "filled" or "bordered"
-          icon: github # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
+          icon: music # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
         - label: Button — Bordered with icon
           url: /documentation
           external_url: false
