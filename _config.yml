@@ -14,12 +14,10 @@ dox:
             - item_name: Default Layout
               item_url: /default
         cta:
-          - label: Documentación
+            label: Documentación
             url: /documentation
             icon: book-open # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
-          - label: Vector ITC
-            url: https://www.vectoritcgroup.com/
-            icon: award
+
     footer:
         logo:
             text: Documentación de Proyectos
