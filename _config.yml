@@ -20,7 +20,7 @@ dox:
     footer:
         logo:
             text: Documentacion de Proyectos
-            image: https://www.vectoritcgroup.com/wp-content/uploads/2018/06/logo-vector.svg
+            image: 
         text: Copyright &copy; 2019. - Vector ITC Group <br>All rights reserved.
     google_analytics:
         tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
