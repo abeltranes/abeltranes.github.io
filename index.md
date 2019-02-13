@@ -20,7 +20,7 @@ hero:
           url: /documentation
           external_url: false
           style: bordered
-          icon: gitlab
+          icon: smile
     download_link: # Set small download link placed below buttons
         label: Download — v4.0.0
         url: https://example.com
