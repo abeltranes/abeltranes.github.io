@@ -7,6 +7,6 @@ keywords: # Define keywords for search engines
 
 # Hero section
 hero:
-    title: Hero section — Title (Documentacion)
+    title: Hero section — (Documentacion)
     text: Hero section — Text
 ---
