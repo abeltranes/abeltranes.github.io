@@ -1,6 +1,6 @@
 ---
 title: Infraestructura de Sistemas
-description: Documentacion de la Infraestructura de Sistemas
+description: Documentación de la Infraestructura de Sistemas
 keywords: null
 order: 3
 comments: false
