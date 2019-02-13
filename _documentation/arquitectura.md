@@ -1,6 +1,6 @@
 ---
 title: Arquitectura de Software
-description: Documentacion del Arquitectura de Software
+description: Documentacion de la Arquitectura de Software
 keywords: null
 order: 2
 comments: false
