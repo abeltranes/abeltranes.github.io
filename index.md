@@ -21,7 +21,7 @@ hero:
           external_url: true
           style: filled
           icon: pie-chart
-        - label: Documentacion
+        - label: Documentación
           url: /documentation
           external_url: false
           style: bordered
