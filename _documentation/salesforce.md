@@ -1,5 +1,5 @@
 ---
-title: Documentacion Salesforce
+title: Salesforce
 description: Documentacion de la plataforma Salesforce
 keywords: null
 order: 1
