@@ -93,7 +93,25 @@ The following cURL command shows how to generate an WSO2 access token using the 
 
 Load sales records from a csv. 
 
-
+### Get the file type: 
+  
+  This service is used to obtain the type of file loaded.
+  
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileType](https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileType)
+`` Description `` | Get the type fily: Sales-Expenses 
+`` Entry `` | **Header**:  
+   | 	identifier: <User Id.> 
+   | 	identifierName: <User Name> 
+   | 	Authorization: Bearer <access_token>
+   | 	Content-Type: application/json   
+   | **Body**
+   | { 	  
+   | 	“File”: <csv_file_base64>
+   | }
+`` Exit `` | **OK**: Code 200.
+   | String with the fyle type
+`` Actions `` | This service generate an WSO2 access token.   
 
 
 
