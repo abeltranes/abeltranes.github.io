@@ -115,8 +115,32 @@ Load sales records from a csv.
   
 ### Upload File Service:
 
+Load the csv file to read the records. 
 
-
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileUpload](https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileUpload)
+`` Description `` | Load the csv file to read the records. 
+`` Entry `` | **Header**:  
+   | 	identifier: \<User Id.> 
+   | 	identifierName: \<User Name> 
+   | 	Authorization: Bearer \<access_token>
+   | 	Content-Type: application/json   
+   | **Body**
+   | { 	  
+   | 	“File”: \<csv_file_base64>
+   | }
+`` Exit `` | **OK**: Code 200.
+   | Body: JSON with records that failed: 
+   | \[ { “shop:” string, 
+   | “dateSale”: string,
+   | \“scope”: string, 
+   | “scopeDes”: string,
+   | “enpe”: string, 
+   | “enpeDes”: string, 
+   | “result”: string,
+   | String with the fyle type
+   | String with the fyle type   
+`` Actions `` | This service will support the use of APIs and the web.
 
 
 
