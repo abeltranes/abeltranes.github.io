@@ -133,13 +133,18 @@ Load the csv file to read the records.
    | Body: JSON with records that failed: 
    | \[ { “shop:” string, 
    | “dateSale”: string,
-   | \“scope”: string, 
+   | “scope”: string, 
    | “scopeDes”: string,
    | “enpe”: string, 
    | “enpeDes”: string, 
    | “result”: string,
-   | String with the fyle type
-   | String with the fyle type   
+   | “dateExpense”: string,
+   | “codeExpense”: string,   
+   | “amountExpense”: string, 
+   | “dateBill”: string,
+   | “numberBill”: string, 
+   | “amountBill”: string 
+   | \}]  
 `` Actions `` | This service will support the use of APIs and the web.
 
 
