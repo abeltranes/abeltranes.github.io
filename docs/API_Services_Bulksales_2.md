@@ -111,7 +111,7 @@ Load sales records from a csv.
    | }
 `` Exit `` | **OK**: Code 200.
    | String with the fyle type
-`` Actions `` | This service generate an WSO2 access token.   
+`` Actions `` | This service will support the use of APIs and the web.   
 
 
 
