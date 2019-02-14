@@ -14,10 +14,12 @@ dox:
             - item_name: Default Layout
               item_url: /default
         cta:
-            label: Documentación
+          - label: Documentación
             url: /documentation
             icon: book-open # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
-
+          - label: Documentación01
+            url: /documentation01
+            icon: folder
     footer:
         logo:
             text: Documentación de Proyectos
@@ -30,7 +32,9 @@ dox:
 
 # Defining collections
 collections:
-    documentation:
+   - documentation:
+        output: true
+   - documentation01:
         output: true
 
 # Defining defaults
