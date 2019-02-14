@@ -17,3 +17,27 @@ nav_order: 3
 ---
 
 aqui se realizara la parte declarativa
+
+# encabezado 1
+
+blablabla
+
+## encabezaado 2
+
+blablabla
+
+### encabezado 3
+
+blablabla
+
+#### encabezado 4
+
+blablabla
+
+##### encabezado 5
+
+blablabla
+
+###### encabezado 6
+
+blablabla **blablabla** blablabla  blablabla
