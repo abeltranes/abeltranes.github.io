@@ -2,6 +2,7 @@
 layout: default
 title: BulkSales Services
 nav_order: 2
+published: true
 ---
 
 # BulkSales Services
@@ -25,7 +26,8 @@ nav_order: 2
 
 ---
 
-__**Document status sheet**__
+**Document status sheet**
+===
 
 Version | Date | Description | Author
 :--: | :--: | :--: | :--: 
@@ -55,6 +57,20 @@ References |   | Description
    |   |   
    
 # API Services Description
+
+The BulkSales APIs allow to load Sales and Expenses in two different ways: 
+-Massive load. 
+-Manual load. 
+
+
+
+
+
+
+
+
+
+
 
 
 
