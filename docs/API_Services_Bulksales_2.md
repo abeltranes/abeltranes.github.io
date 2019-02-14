@@ -81,7 +81,7 @@ The following cURL command shows how to generate an WSO2 access token using the 
    | [https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
 `` Description `` | Generate Access Token
 `` Entry `` | **Header**:  
-   | 	Authorization: Basic <token>
+   | 	Authorization: Basic \<token>
    | 	Content-Type: application/x-www-form-urlencoded  
    | **Body**
    | 	grant_type: client_credentials
