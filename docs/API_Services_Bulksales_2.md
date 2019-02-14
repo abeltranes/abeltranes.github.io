@@ -18,7 +18,7 @@ published: true
 **Date:** | 04 January 2019
 {: .fs-6 .fw-300 }
 
-## Table of contents
+## Index
 {: .no_toc .text-delta }
 
 1. TOC
@@ -27,7 +27,6 @@ published: true
 ---
 
 **Document status sheet**
-===
 
 Version | Date | Description | Author
 :--: | :--: | :--: | :--: 
