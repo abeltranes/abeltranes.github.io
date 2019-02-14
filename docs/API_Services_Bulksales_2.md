@@ -163,6 +163,7 @@ Check the quantities entered:
 
 -- Calculate the total amounts: 
 
+	If taxes are greather than 0:
 
 
 
