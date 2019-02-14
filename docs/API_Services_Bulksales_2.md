@@ -147,6 +147,36 @@ Load the csv file to read the records.
    | \}]  
 `` Actions `` | This service will support the use of APIs and the web.
 
+Once the corresponding validations have been made about the type of file and its records (correct file and mandatory fields filled in), the following checks and calls to the services will be made:
+
+- Checking Store field: Check that the store that comes in the csv file corresponds to valid store. Service defined in point 4.1.1
+
+- Checking the fields Tax1, Tax2, Tax3, SurchargeTax1 and SurchargeTax2: Check that the types of Taxes entered in these fields correspond to the correct taxes for the country indicated. Service defined in point 4.1.2 
+
+Check the quantities entered:
+
+- Check that the values entered are not null or empty.
+
+- For each of the channels and areas we carry out the following operations:
+
+-- Check that the order number is greater than 0. 
+
+-- Calculate the total amounts: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
