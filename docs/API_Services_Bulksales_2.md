@@ -37,3 +37,20 @@ Version | Date | Description | Author
 ## Purpose and scope of the document 
 
 The purpose of this document is to describe the services used in the BulkSales application.
+
+## Definitions and acronyms
+
+Name | Definition
+-- | --
+TPZ | Telepizza
+
+## References
+
+References |   | Description
+-- | -- | --
+   |   |   
+   
+# API Services Description
+
+
+
