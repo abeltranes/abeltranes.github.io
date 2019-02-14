@@ -13,13 +13,13 @@ dox:
               item_url: /
             - item_name: Default Layout
               item_url: /default
+            - item_name: doc
+              item_url: /documentation
         cta:
           - label: Documentación
             url: /documentation
             icon: book-open # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
-          - label: Documentación01
-            url: /documentation01
-            icon: folder
+
     footer:
         logo:
             text: Documentación de Proyectos
