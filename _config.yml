@@ -45,12 +45,7 @@ defaults:
             type: 'documentation'
         values:
             layout: 'documentation-single'
-    -
-        scope:
-            path: 'doumentation01'
-            type: 'documentation'
-        values:
-            layout: 'documentation-single'            
+         
            
 
 # SASS settings
