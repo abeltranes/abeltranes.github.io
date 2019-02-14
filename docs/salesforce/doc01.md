@@ -26,6 +26,18 @@ se ha realizado programando
 
 se ha realizado por arte de magia
 
-### Caso de uso de ayer
+### Aplicado en España
 
 se esta realizando
+
+### Aplicado en Japon
+
+se esta completando
+
+### Aplicado en EEUU
+
+se esta horneando
+
+#### Caso especial
+
+la pizza especial
