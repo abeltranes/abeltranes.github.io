@@ -65,6 +65,16 @@ The BulkSales APIs allow to load Sales and Expenses in two different ways:
 
 ![img02.png]({{site.baseurl}}/docs/img02.png)
 
+##  Generate WSO2 Access Token 
+
+In order to invoke the BulkSales API published in WSO2, it is necessary to previously generate an access token.
+
+The following cURL command shows how to generate an WSO2 access token using the Client Credentials grant type: 
+
+curl -k -d "grant_type=client_credentials" \      -H "Authorization: Basic Base64(consumer-key:consumer-secret)" \
+
+[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
+
 
 
 
