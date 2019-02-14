@@ -159,9 +159,8 @@ Check the quantities entered:
 
 - For each of the channels and areas we carry out the following operations:
 
--- Check that the order number is greater than 0. 
-
--- Calculate the total amounts: 
+	-  Check that the order number is greater than 0. 
+	- Calculate the total amounts: 
 
 	If taxes are greather than 0:
 
