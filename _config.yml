@@ -47,8 +47,8 @@ defaults:
             layout: 'documentation-single'
     -
         scope:
-            path: ''
-            type: 'documentation01'
+            path: 'doumentation01'
+            type: 'documentation'
         values:
             layout: 'documentation-single'            
            
