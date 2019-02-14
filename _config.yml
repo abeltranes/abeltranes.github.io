@@ -13,8 +13,7 @@ dox:
               item_url: /
             - item_name: Default Layout
               item_url: /default
-            - item_name: doc
-              item_url: /documentation
+
         cta:
           - label: Documentación
             url: /documentation
@@ -34,8 +33,7 @@ dox:
 collections:
    - documentation:
         output: true
-   - documentation01:
-        output: true
+
 
 # Defining defaults
 defaults:
