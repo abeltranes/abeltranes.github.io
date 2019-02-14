@@ -71,9 +71,9 @@ In order to invoke the BulkSales API published in WSO2, it is necessary to previ
 
 The following cURL command shows how to generate an WSO2 access token using the Client Credentials grant type: 
 
-` curl -k -d "grant_type=client_credentials" \      
-
-					-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ `
+> curl -k -d "grant_type=client_credentials" \      
+>
+>					-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ 
 
 [https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
 
