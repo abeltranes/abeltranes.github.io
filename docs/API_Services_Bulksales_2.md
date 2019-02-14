@@ -61,6 +61,11 @@ The BulkSales APIs allow to load Sales and Expenses in two different ways:
 -Massive load. 
 -Manual load. 
 
+![img01.png]({{site.baseurl}}/docs/img01.png)
+
+![img02.png]({{site.baseurl}}/docs/img02.png)
+
+
 
 
 
