@@ -75,7 +75,7 @@ The following cURL command shows how to generate an WSO2 access token using the 
 
 					-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ 
 
-[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
+					[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
 
 `` ID `` | GET  
    | [https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
