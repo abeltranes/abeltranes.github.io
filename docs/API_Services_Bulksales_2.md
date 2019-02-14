@@ -26,6 +26,7 @@ nav_order: 2
 ---
 
 __**Document status sheet**__
+
 Version | Date | Description | Author
 -- | -- | -- | -- 
 1.0 | 04/01/2019 | BulkSales Services | Vector
@@ -42,7 +43,10 @@ The purpose of this document is to describe the services used in the BulkSales a
 
 Name | Definition
 -- | --
-TPZ | Telepizza
+TPZ     | Telepizza           
+   |   
+   |
+   |
 
 ## References
 
