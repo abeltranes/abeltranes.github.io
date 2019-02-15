@@ -204,8 +204,101 @@ This service obtain the currencies for the country.
 
 This service obtain the countries.
 
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCountries](https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCountries)
+`` Description `` | Get the list of countries
+`` Entry `` | **Header**:  
+   | 	identifier: \<User Id.> 
+   | 	identifierName: \<User Name> 
+   | 	Authorization: Bearer \<access_token>
+   | 	Content-Type: application/json   
+`` Exit `` | **OK**: Code 200.
+   | String with the list of countries
+`` Actions `` | This service will support the use of APIs and the web. 
 
+### Saves Sales
 
+Save sales record.
+
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.sales/v1/sales/savesales](https://api-aws.telepizza.com/bulksales.sales/v1/sales/savesales)
+`` Description `` | Save the record
+`` Entry `` | **Header**:  
+   | 	identifier: \<User Id.> 
+   | 	identifierName: \<User Name> 
+   | 	Authorization: Bearer \<access_token>
+   | 	Content-Type: application/json   
+   | 	**Body**:
+   | \[
+   | \ {
+   | "date": "Store Number assigned by Telepizza SAU, with 5 digits", 
+   | "shop": "Sales date",
+   | "tax1": "type 1 of tax used on Telepizza",
+   | "tax2": "type 2 of tax used on Telepizza",
+   | "tax3": "type 3 of tax used on Telepizza",
+   | "surchargeTax1": "Surcharge Tax 1",
+   | "surchargeTax2": "Surcharge Tax 2",
+   | "s1VID": "Total Surcharge 1 Online Delivery Sales",
+   | "s2VID": "Total Surcharge 2 Online Delivery Sales",
+   | "vid": "Online Delivery Sales", 
+   | "i1ID": "Total TAX1 Online Delivery Sales",
+   | "i2ID": "Total TAX2 Online Delivery Sales",
+   | "i3ID": "Total TAX3 Online Delivery Sales",
+   | "oid": "Total Orders Online Delivery Way",
+   | "s1VIR": " Total Surcharge 1 Online Take Away Sales ",
+   | "s2VIR": " Total Surcharge 2 Online Take Away Sales ",
+   | "vir": "Online Take Away Sales",
+   | "i1IR": "Total TAX1 Online Take Away Sales",
+   | "i2IR": "Total TAX2 Online Take Away Sales",
+   | "i3IR": "Total TAX3 Online Take Away Sales",
+   | "oir": "Total Orders Online Take-Away Way",
+   | "s1VTD": " Total Surcharge 1 Phone Delivery Sales ",
+   | "s2VTD": " Total Surcharge 2 Phone Delivery Sales ",
+   | "vtd": "Phone Delivery Sales",
+   | "i1TD": "Total TAX1 Phone Delivery Sales",
+   | "i2TD": "Total TAX2 Phone Delivery Sales",
+   | "i3TD": "Total TAX3 Phone Delivery Sales",
+   | "otd": "Total Orders Phone Delivery Way",
+   | "s1VTR": " Total Surcharge 1 Phone Take Away Sales ",   
+   | "s2VTR": " Total Surcharge 2 Phone Take Away Sales ",
+   | "vtr": "Phone Take Away Sales",
+   | "i1TR": "Total TAX1 Phone Take Away Sales",
+   | "i2TR": "Total TAX2 Phone Take Away Sales",
+   | "i3TR": "Total TAX3 Phone Take Away Sales",
+   | "otr": "Total Orders Phone Take-Away Way",
+   | "s1VCL": " Total Surcharge 1 Cash Till Restaurant Sales ",
+   | "s2VCL": " Total Surcharge 2 Cash Till Restaurant Sales ",
+   | "vcl": "Cash Till Restaurant Sales",
+   | "i1CL": "Total TAX1 Cash Till Restaurant Sales",
+   | "i2CL": "Total TAX2 Cash Till Restaurant Sales",
+   | "i3CL": "Total TAX3 Cash Till Restaurant Sales",
+   | "ocl": "Total Orders Cash Till Restaurant Way",
+   | "s1VCR": " Total Surcharge 1 Cash Till At Store Sales ",
+   | "s2VCR": " Total Surcharge 2 Cash Till At Store Sales ", 
+   | "vcr": "Cash Till At Store Sales", 
+   | "i1CR": "Total TAX1 Cash Till At Store Sales",
+   | "i2CR": "Total TAX2 Cash Till At Store Sales",
+   | "i3CR": "Total TAX3 Cash Till At Store Sales",
+   | "ocr": "Total Orders Cash Till At Store Way"
+   | }  
+   | ] 
+`` Exit `` | **OK**: Code 200.
+   | Body: JSON with records that failed:
+   | \[ { “shop:” string, 
+   | “dateSale”: string,
+   | “scope”: string,
+   | “scopeDes”: string,
+   | “enpe”: string,
+   | “enpeDes”: string, 
+   | “result”: string,
+   | “dateExpense”: string, 
+   | “codeExpense”: string,
+   | “amountExpense”: string,   
+   | “dateBill”: string,
+   | “numberBill”: string,
+   | “amountBill”: string
+   | \}]
+`` Actions `` | This service will support the use of APIs and the web. 
 
 
 
