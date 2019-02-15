@@ -646,17 +646,124 @@ Exit 		OK: 200.
 Actions 	This service will support the use of APIs and the web.
 ````
 
+## Expenses – Load CSV
 
+Load expenses records from a CSV.
 
+To process this type of file, the same calls are made as for the sales file:
+* Get the type File.
+* Upload File 
 
+### Save Expenses
 
+Save expenses record.
 
+````
+ID 		POST
+		https://api-aws.telepizza.com/bulksales.expenses/v1/expenses/saveexpenses
+Description 	Save the record
+Entry 		Header:
+ 		  identifier: <User Id.>
+ 		  identifierName: <User Name>
+ 		  Authorization: Bearer <access_token>
+ 		  Content-Type: application/json
+		Body:
+		[
+		{ “fecha”: “Expenses date”,
+ 		  “tienda”: “Expense shop”,
+ 		  “gasto”: “Expense type”,
+ 		  “importe”: “Expense amount”
+ 		 }
+		]
+Exit 		OK: 200.
+		Body: JSON with records that failed:
+		[ { “shop:” string,
+ 		    “dateSale”: string,
+ 		    “scope”: string,
+ 		    “scopeDes”: string,
+ 		    “enpe”: string,
+ 		    “enpeDes”: string,
+ 		    “result”: string,
+ 		    “dateExpense”: string,
+ 		    “codeExpense”: string,
+ 		    “amountExpense”: string,
+ 		    “dateBill”: string,
+ 		    “numberBill”: string,
+ 		    “amountBill”: string
+		}]
+Actions 	This service will support the use of APIs and the web.
+````
 
+### Log Expenses
 
+This method obtains the expenses log, filtering by initDate, endDate or shopId.
 
+````
+ID 		GET
+		https://api-aws.telepizza.com/bulksales.expenses/v1/expenses/LogExpenses/LogExpenses
+Description 	Get Log Expenses
+Entry 		Parameters:
+ 		  initDate: Init date
+ 		  endDate: End date
+ 		  shopId: Shop ID
+Exit 		OK: 200.
+		[{
+ 		  LogId
+ 		  CountryId
+ 		  Shop
+ 		  DateExpense
+ 		  Date
+ 		  Code
+ 		  Amount
+ 		  UserId
+ 		  UserName
+ 		  Incorporated
+ 		  Collected
+		}]
+Actions 	This service will support the use of APIs and the web.
+````
 
+# External Services Description
 
+## Get Shops
 
+Check that the store that comes in the csv file corresponds to valid store
+
+````
+ID 		GET: <IAM> https://api-tpgescom.telepizza.com/api/shops
+Description 	Get the user shops
+Entry 		Header:
+ 		  Authorization: Bearer <Access_token>
+Exit 		OK: 200.
+		Body:
+		[{
+ 		  "country": [{
+ 			“code”: “string”,
+ 			“name”: “string”,
+ 			“bussinessArea”: [{
+ 				“code”: “string”,
+ 				“name”: “string”,
+ 				“operationArea: [{
+ 					“code”: “string”,
+ 					“name”: “string”,
+ 					“supervisor”: [{
+ 						“code”: “string”,
+ 						“name”: “string”,
+ 						“shop”: [{
+ 							“code”: “string”,
+ 							“name”: “string”
+ 							“societyCode”: “string”,
+ 							“societyname”: “string”
+							“franchiseeCode”: “string”,
+							“franchiseeName”: “string”
+ 						}]
+ 					}]
+ 				}]
+ 			}]
+ 		  }]
+		}]
+Actions 	Get shops in the IAM API with the token of the user.
+````
 
 
 
