@@ -371,11 +371,44 @@ services.
 `` Exit `` | **OK**: Code 200.
 `` Actions `` | This service will support the use of APIs and the web. 
 
+## Permissions
 
+### Get country permissions
 
+This service obtain the permissions for the country
 
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCountryPermissions](https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCountryPermissions)
+`` Description `` | Get the permissions
+`` Entry `` | **Header**:  
+   | 	identifier: \<User Id.> 
+   | 	identifierName: \<User Name> 
+   | 	Authorization: Bearer \<access_token>
+   | 	Content-Type: application/json   
+   | **Parameters:**
+   | “countryCode”: Code for the country 	  
+`` Exit `` | **OK**: Code 200.
+   | String with the currency code.
+`` Actions `` | This service will support the use of APIs and the web.  
 
+### Get country shop permissions
 
+This service obtain the permissions for the country and shop
+
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.uploader/v1/sales/ getCountryShopPermissions](https://api-aws.telepizza.com/bulksales.uploader/v1/sales/ getCountryShopPermissions)
+`` Description `` | Get the permissions
+`` Entry `` | **Header**:  
+   | 	identifier: \<User Id.> 
+   | 	identifierName: \<User Name> 
+   | 	Authorization: Bearer \<access_token>
+   | 	Content-Type: application/json   
+   | **Parameters:**
+   | “countryCode”: Code for the country 
+   | “shopCode”: Shop code
+`` Exit `` | **OK**: Code 200.
+   | String with the permissions for the shop.
+`` Actions `` | This service will support the use of APIs and the web.  
 
 
 
