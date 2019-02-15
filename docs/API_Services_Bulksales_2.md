@@ -184,7 +184,27 @@ After performing these calculations, the sales record and the log record are ins
 
 ### Get currency
 
-This service obtain the currencies for the country. 
+This service obtain the currencies for the country.  
+
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCurrency](https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCurrency)
+`` Description `` | Get the currency
+`` Entry `` | **Header**:  
+   | 	identifier: \<User Id.> 
+   | 	identifierName: \<User Name> 
+   | 	Authorization: Bearer \<access_token>
+   | 	Content-Type: application/json   
+   | **Parameters:**
+   | \“countryCode”: Code for the country 	  
+`` Exit `` | **OK**: Code 200.
+   | String with the currency code.
+`` Actions `` | This service will support the use of APIs and the web.   
+
+### Get countries
+
+This service obtain the countries.
+
+
 
 
 
