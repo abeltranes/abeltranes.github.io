@@ -455,6 +455,78 @@ This service remomve the permissions for the country
 `` Exit `` | **OK**: Code 200.
 `` Actions `` | This service will support the use of APIs and the web. 
 
+## Process
+
+### Get User Process.
+
+It obtains all user processes. The status field indicates the state in which the process is located.
+These states can be:
+
+0 - New  
+1 - Processing  
+2 - Terminated  
+3 – Error
+
+A user can’t load more files while they have a process in Processing state.
+
+`` ID `` | GET  
+   | [https://api-aws.telepizza.com/bulksales.sales/v1/sales/getUserProcess](https://api-aws.telepizza.com/bulksales.sales/v1/sales/getUserProcess)
+`` Description `` | Get process
+`` Entry `` | **Header**:  
+   | &nbsp;&nbsp;&nbsp;identifier: \<User Id.> 
+   | &nbsp;&nbsp;&nbsp;identifierName: \<User Name> 
+   | &nbsp;&nbsp;&nbsp;Authorization: Bearer \<access_token>
+   | &nbsp;&nbsp;&nbsp;Content-Type: application/json   
+   | **Body:**
+   | \[  
+   | &nbsp;{   
+   | &nbsp;&nbsp;&nbsp;"userId": "string" 
+   | &nbsp;}
+   | ]
+`` Exit `` | **OK**: Code 200.
+   | Body: JSON with records that failed:
+   | \[{ "processId": "int", 
+   | "userId": "strins",
+   | "userName": "string",
+   | "status": "int",
+   | "initDate": "dateTime",  
+   | "endDate": " dateTime ",    
+   | "entryDate": " dateTime ",   
+   | "data": "string"  
+   | "resultProcess": \[{
+   | "id": "int",  
+   | "processId": "int",  
+   | "result": "string" }],   
+   |   
+   |   
+   |   
+   |      
+`` Actions `` | This service will support the use of APIs and the web. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
