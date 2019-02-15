@@ -171,14 +171,15 @@ Check the quantities entered:
     
     Total3 = ((amount3 * 100) / tax3) + amount3
     
-        If any of the taxes is 0 the Total will be equal to the Amount of the tax that was 0, for example, if tax1 = 0: 
+    If any of the taxes is 0 the Total will be equal to the Amount of the tax that was 0, for example, if tax1 = 0: 
     
     Total1 = amount1
     
     Total = Total1 + Total2 + Total3 
     
-    	- Calculate Total net: 
+    	-- Calculate Total net: 
         
+	
 	If taxes and amounts are greather than 0: 
     
     TotalNet1 = (amount1 * 100) / tax1 
