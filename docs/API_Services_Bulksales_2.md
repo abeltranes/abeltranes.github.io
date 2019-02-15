@@ -412,7 +412,28 @@ This service obtain the permissions for the country and shop
    | String with the permissions for the shop.
 `` Actions `` | This service will support the use of APIs and the web.  
 
+## Save Permissions
 
+This service save the permissions for the country
+
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.uploader/v1/sales/SavePermissionCountry](https://api-aws.telepizza.com/bulksales.uploader/v1/sales/SavePermissionCountry)
+`` Description `` | Save the permissions
+`` Entry `` | **Header**:  
+   | &nbsp;&nbsp;identifier: \<User Id.> 
+   | &nbsp;&nbsp;identifierName: \<User Name> 
+   | &nbsp;&nbsp;Authorization: Bearer \<access_token>
+   | 	Content-Type: application/json   
+   | **Body:**
+   | {   
+   | “countryCode”: Code for the country 
+   | “shopCode”: Shop code
+   | “ShowDailySales”: True if there is permissions for the radio day
+   | “ShowWeeklySales”: True if there is permissions for the radio week
+   | “ShowMonthlySales”: True if there is permissions for the radio month.
+   | }
+`` Exit `` | **OK**: Code 200.
+`` Actions `` | This service will support the use of APIs and the web.  
 
 
 
