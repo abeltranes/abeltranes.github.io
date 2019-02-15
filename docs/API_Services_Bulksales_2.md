@@ -82,10 +82,10 @@ ID		GET
 		https://api-aws.telepizza.com/token
 Description 	Generate Access Token
 Entry 		Header:
- 			Authorization: Basic <token>
- 			Content-Type: application/x-www-form-urlencoded
+ 		  Authorization: Basic <token>
+ 		  Content-Type: application/x-www-form-urlencoded
 		Body
- 			grant_type: client_credentials
+ 		  grant_type: client_credentials
 Exit 		OK: Code 200.
 		String with the fyle type
 Actions 	This service generate an WSO2 access token.
@@ -104,13 +104,13 @@ ID 		POST
 		https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileType
 Description 	Get the type fily: Sales-Expenses
 Entry 		Header:
- 			identifier: <User Id.>
- 			identifierName: <User Name>
- 			Authorization: Bearer <access_token>
- 			Content-Type: application/json
+ 		  identifier: <User Id.>
+ 		  identifierName: <User Name>
+ 		  Authorization: Bearer <access_token>
+ 		  Content-Type: application/json
 		Body:
 		{
-			 “File”: <csv_file_base64>
+		  “File”: <csv_file_base64>
 		}
 Exit 		OK: Code 200.
 		String with the fyle type
@@ -126,29 +126,29 @@ ID 		POST
 		https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileUpload
 Description 	Load the csv file to read the records.
 Entry 		Header:
- 			identifier: <User Id.>
- 			identifierName: <User Name>
- 			Authorization: Bearer <access_token>
- 			Content-Type: application/json
+ 		  identifier: <User Id.>
+ 		  identifierName: <User Name>
+ 		  Authorization: Bearer <access_token>
+ 		  Content-Type: application/json
 		Body:
 		{
- 			“File”: <csv_file_base64>
+ 		  “File”: <csv_file_base64>
 		}
 Exit 		OK: 200.
 		Body: JSON with records that failed:
 		[ { “shop:” string,
- 			“dateSale”: string,
- 			“scope”: string,
-  			“scopeDes”: string,
-  			“enpe”: string,
-  			“enpeDes”: string,
-  			“result”: string,
-  			“dateExpense”: string,
-   			“codeExpense”: string,
-   			“amountExpense”: string,
-   			“dateBill”: string,
-   			“numberBill”: string,
-   			“amountBill”: string
+ 		    “dateSale”: string,
+ 		    “scope”: string,
+  		    “scopeDes”: string,
+  		    “enpe”: string,
+  		    “enpeDes”: string,
+  		    “result”: string,
+  		    “dateExpense”: string,
+   		    “codeExpense”: string,
+   		    “amountExpense”: string,
+   		    “dateBill”: string,
+   		    “numberBill”: string,
+   		    “amountBill”: string
 		}]
 Actions 	This service will support the use of APIs and the web.
 ~~~
