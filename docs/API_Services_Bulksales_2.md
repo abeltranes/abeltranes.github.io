@@ -71,12 +71,10 @@ In order to invoke the BulkSales API published in WSO2, it is necessary to previ
 
 The following cURL command shows how to generate an WSO2 access token using the Client Credentials grant type: 
 
-	curl -k -d "grant_type=client_credentials" \      
-
-			-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ 
-
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
-
+````curl -k -d "grant_type=client_credentials" \      
+		-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ 
+		https://api-aws.telepizza.com/token````
+		
 ~~~
 ID		GET
 		https://api-aws.telepizza.com/token
@@ -98,6 +96,7 @@ Load sales records from a csv.
 ### Get the file type: 
   
 This service is used to obtain the type of file loaded.
+
 ~~~  
 ID 		POST
 		https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileType
@@ -119,6 +118,7 @@ Actions	 	This service will support the use of APIs and the web.
 ### Upload File Service:
 
 Load the csv file to read the records. 
+
 ~~~
 ID 		POST
 		https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileUpload
@@ -150,6 +150,7 @@ Exit 		OK: 200.
 		}]
 Actions 	This service will support the use of APIs and the web.
 ~~~
+
 Once the corresponding validations have been made about the type of file and its records (correct file and mandatory fields filled in), the following checks and calls to the services will be made:
 
 * Checking Store field: Check that the store that comes in the csv file corresponds to valid store. Service defined in point 4.1.1  
