@@ -97,58 +97,59 @@ Load sales records from a csv.
 
 ### Get the file type: 
   
-   This service is used to obtain the type of file loaded.
-  
-`` ID `` | POST  
-   | [https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileType](https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileType)
-`` Description `` | Get the type fily: Sales-Expenses 
-`` Entry `` | **Header**:  
-   | &nbsp;&nbsp;&nbsp;identifier: \<User Id.> 
-   | &nbsp;&nbsp;&nbsp;identifierName: \<User Name> 
-   | &nbsp;&nbsp;&nbsp;Authorization: Bearer \<access_token>
-   | &nbsp;&nbsp;&nbsp;Content-Type: application/json 
-   | **Body**
-   | { 	  
-   | &nbsp;&nbsp;&nbsp;“File”: \<csv_file_base64>
-   | }
-`` Exit `` | **OK**: Code 200.
-   | String with the fyle type
-`` Actions `` | This service will support the use of APIs and the web.   
+This service is used to obtain the type of file loaded.
+~~~  
+ID 		POST
+		https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileType
+Description 	Get the type fily: Sales-Expenses
+Entry 		Header:
+ 			identifier: <User Id.>
+ 			identifierName: <User Name>
+ 			Authorization: Bearer <access_token>
+ 			Content-Type: application/json
+		Body:
+		{
+			 “File”: <csv_file_base64>
+		}
+Exit 		OK: Code 200.
+		String with the fyle type
+Actions	 	This service will support the use of APIs and the web.
+~~~
   
 ### Upload File Service:
 
 Load the csv file to read the records. 
-
-`` ID `` | POST  
-   | [https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileUpload](https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileUpload)
-`` Description `` | Load the csv file to read the records. 
-`` Entry `` | **Header**:  
-   | &nbsp;&nbsp;&nbsp;identifier: \<User Id.> 
-   | &nbsp;&nbsp;&nbsp;identifierName: \<User Name> 
-   | &nbsp;&nbsp;&nbsp;Authorization: Bearer \<access_token>
-   | &nbsp;&nbsp;&nbsp;Content-Type: application/json  
-   | **Body**
-   | { 	  
-   | 	“File”: \<csv_file_base64>
-   | }
-`` Exit `` | **OK**: Code 200.
-   | Body: JSON with records that failed: 
-   | \[{ “shop:” string, 
-   | &nbsp;&nbsp;&nbsp;“dateSale”: string,
-   | &nbsp;&nbsp;&nbsp;“scope”: string, 
-   | &nbsp;&nbsp;&nbsp;“scopeDes”: string,
-   | &nbsp;&nbsp;&nbsp;“enpe”: string, 
-   | &nbsp;&nbsp;&nbsp;“enpeDes”: string, 
-   | &nbsp;&nbsp;&nbsp;“result”: string,
-   | &nbsp;&nbsp;&nbsp;“dateExpense”: string,
-   | &nbsp;&nbsp;&nbsp;“codeExpense”: string,   
-   | &nbsp;&nbsp;&nbsp;“amountExpense”: string, 
-   | &nbsp;&nbsp;&nbsp;“dateBill”: string,
-   | &nbsp;&nbsp;&nbsp;“numberBill”: string, 
-   | &nbsp;&nbsp;&nbsp;“amountBill”: string 
-   | \}]  
-`` Actions `` | This service will support the use of APIs and the web.
-
+~~~
+ID 		POST
+		https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileUpload
+Description 	Load the csv file to read the records.
+Entry 		Header:
+ 			identifier: <User Id.>
+ 			identifierName: <User Name>
+ 			Authorization: Bearer <access_token>
+ 			Content-Type: application/json
+		Body:
+		{
+ 			“File”: <csv_file_base64>
+		}
+Exit 		OK: 200.
+		Body: JSON with records that failed:
+		[ { “shop:” string,
+ 			“dateSale”: string,
+ 			“scope”: string,
+  			“scopeDes”: string,
+  			“enpe”: string,
+  			“enpeDes”: string,
+  			“result”: string,
+  			“dateExpense”: string,
+   			“codeExpense”: string,
+   			“amountExpense”: string,
+   			“dateBill”: string,
+   			“numberBill”: string,
+   			“amountBill”: string
+		}]
+Actions 	This service will support the use of APIs and the web.
+~~~
 Once the corresponding validations have been made about the type of file and its records (correct file and mandatory fields filled in), the following checks and calls to the services will be made:
 
 * Checking Store field: Check that the store that comes in the csv file corresponds to valid store. Service defined in point 4.1.1  
