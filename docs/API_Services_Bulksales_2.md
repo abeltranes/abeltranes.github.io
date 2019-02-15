@@ -75,7 +75,7 @@ The following cURL command shows how to generate an WSO2 access token using the 
 
 					-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ 
 
-[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
+					[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
 
 `` ID `` | GET  
    | [https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
@@ -282,7 +282,7 @@ Save sales record.
    | &nbsp;&nbsp;&nbsp;"i2CR": "Total TAX2 Cash Till At Store Sales",
    | &nbsp;&nbsp;&nbsp;"i3CR": "Total TAX3 Cash Till At Store Sales",
    | &nbsp;&nbsp;&nbsp;"ocr": "Total Orders Cash Till At Store Way"
-   | }  
+   | &nbsp;}  
    | ] 
 `` Exit `` | **OK**: Code 200.
    | Body: JSON with records that failed:
