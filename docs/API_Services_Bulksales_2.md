@@ -165,8 +165,7 @@ Check the quantities entered:
 
 	If taxes are greather than 0:
     
-    Total1 = ((amount1 * 100) / tax1) + amount
-    
+    Total1 = ((amount1 * 100) / tax1) + amount  
     Total2 = ((amount2 * 100) / tax2) + amount2 
     
     Total3 = ((amount3 * 100) / tax3) + amount3
@@ -180,6 +179,7 @@ Check the quantities entered:
     	-- Calculate Total net: 
         
 	
+	&nbsp;
 	If taxes and amounts are greather than 0: 
     
     TotalNet1 = (amount1 * 100) / tax1 
