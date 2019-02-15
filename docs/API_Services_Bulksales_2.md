@@ -77,16 +77,16 @@ The following cURL command shows how to generate an WSO2 access token using the 
 
 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
 
-`` ID `` | GET  
-   | [https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
+`` ID `` | ```GET
+https://api-aws.telepizza.com/token``` 
 `` Description `` | Generate Access Token
-`` Entry `` | **Header**:  
-   | &nbsp;&nbsp;&nbsp;Authorization: Basic \<token>
-   | &nbsp;&nbsp;&nbsp;Content-Type: application/x-www-form-urlencoded  
-   | **Body**
-   | &nbsp;&nbsp;&nbsp;grant_type: client_credentials
-`` Exit `` | **OK**: Code 200.
-   | String with the fyle type
+`` Entry `` | ```Header:
+ Authorization: Basic <token>
+ Content-Type: application/x-www-form-urlencoded
+Body
+ grant_type: client_credentials```
+`` Exit `` | ```OK: Code 200.
+String with the fyle type```
 `` Actions `` | This service generate an WSO2 access token. 
 
 ## Sales – Load CSV 
