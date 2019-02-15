@@ -121,7 +121,7 @@ Actions	 	This service will support the use of APIs and the web.
 
 Load the csv file to read the records. 
 
-~~~
+````
 ID 		POST
 		https://api-aws.telepizza.com/bulksales.uploader/v1/uploader/fileUpload
 Description 	Load the csv file to read the records.
@@ -151,7 +151,7 @@ Exit 		OK: 200.
    		    “amountBill”: string
 		}]
 Actions 	This service will support the use of APIs and the web.
-~~~
+````
 
 Once the corresponding validations have been made about the type of file and its records (correct file and mandatory fields filled in), the following checks and calls to the services will be made:
 
@@ -194,35 +194,39 @@ After performing these calculations, the sales record and the log record are ins
 
 This service obtain the currencies for the country.  
 
-`` ID `` | POST  
-   | [https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCurrency](https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCurrency)
-`` Description `` | Get the currency
-`` Entry `` | **Header**:  
-   | &nbsp;&nbsp;&nbsp;identifier: \<User Id.> 
-   | &nbsp;&nbsp;&nbsp;identifierName: \<User Name> 
-   | &nbsp;&nbsp;&nbsp;Authorization: Bearer \<access_token>
-   | &nbsp;&nbsp;&nbsp;Content-Type: application/json   
-   | **Parameters:**
-   | &nbsp;&nbsp;&nbsp;“countryCode”: Code for the country 	  
-`` Exit `` | **OK**: Code 200.
-   | String with the currency code.
-`` Actions `` | This service will support the use of APIs and the web.   
+````
+ID 		POST
+		https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCurrency
+Description	Get the currency
+Entry 		Header:
+ 		  identifier: <User Id.>
+ 		  identifierName: <User Name>
+ 		  Authorization: Bearer <access_token>
+ 		  Content-Type: application/json
+		Parameters:
+ 		  “countryCode”: Code for the country
+Exit 		OK: Code 200.
+		String with the currency code.
+Actions This service will support the use of APIs and the web. 
+````
 
 ### Get countries
 
 This service obtain the countries.
 
-`` ID `` | POST  
-   | [https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCountries](https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCountries)
-`` Description `` | Get the list of countries
-`` Entry `` | **Header**:  
-   | &nbsp;&nbsp;&nbsp;identifier: \<User Id.> 
-   | &nbsp;&nbsp;&nbsp;identifierName: \<User Name> 
-   | &nbsp;&nbsp;&nbsp;Authorization: Bearer \<access_token>
-   | &nbsp;&nbsp;&nbsp;Content-Type: application/json     
-`` Exit `` | **OK**: Code 200.
-   | String with the list of countries
-`` Actions `` | This service will support the use of APIs and the web. 
+````
+ID 		POST
+		https://api-aws.telepizza.com/bulksales.uploader/v1/sales/getCountries
+Description	Get the listo f countries
+Entry 		Header:
+ 		  identifier: <User Id.>
+ 		  identifierName: <User Name>
+ 		  Authorization: Bearer <access_token>
+ 		  Content-Type: application/json
+Exit 		OK: Code 200.
+		String with the list of countries
+Actions 	This service will support the use of APIs and the web.
+````
 
 ### Saves Sales
 
