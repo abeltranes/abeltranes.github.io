@@ -88,7 +88,7 @@ Body
 `` Exit `` | ```OK: Code 200.
 String with the fyle type```
 `` Actions `` | This service generate an WSO2 access token. 
-***************
+
 ```ID GET
 https://api-aws.telepizza.com/token
 Description Generate Access Token
