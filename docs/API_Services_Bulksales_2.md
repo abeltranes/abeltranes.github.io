@@ -556,13 +556,95 @@ Exit 		OK: 200.
 Actions 	This service will support the use of APIs and the web.
 ````
 
+## Logs
 
+### Log Sales
 
+This method obtains the sales log, filtering by initDate, endDate or shopId.
 
+````
+ID 		GET
+		https://api-aws.telepizza.com/bulksales.sales/v1/sales/LogSales/LogSales
+Description 	Get Log Sales
+Entry 		Parameters:
+ 		  initDate: Init date
+ 		  endDate: End date
+ 		  registerDate: Register Date
+ 		  countryId: Country Id
+ 		  shopId: Shop ID
+Exit 		OK: 200.
+		[{
+		 LogId
+		 DateSale
+		 Date
+		 CountryId
+		 Shop
+		 Sope
+		 Enpe
+		 InvoicedSale
+		 TotalNet 
+		 AmountTax1
+		 AmountTax2
+		 AmountTax3
+		 Tax1
+		 Tax2
+		 Tax3
+		 SurchargeTax1
+		 SurchargeTax2
+		 AmountSTax1
+		 AmountSTax2
+		 OrderNumber
+		 UserId
+		 UserName
+		 Incorporated
+		 Collected
+		}]
+Actions 	This service will support the use of APIs and the web.
+````
 
+### Log Estimated Sales
 
+This method obtains the estimated sales log, filtering by initDate, endDate or shopId.
 
-
+````
+ID 		GET
+		https://api-aws.telepizza.com/bulksales.sales/v1/sales/LogSales/LogSalesEstimated
+Description 	Get Log Estimated Sales
+Entry 		Parameters:
+ 		  initDate: Init date
+ 		  endDate: End date
+ 		  registerDate: Register Date
+ 		  shopId: Shop ID
+ 		  countryId: Country Id
+Exit 		OK: 200.
+		[{
+		 LogId
+		 DateSale
+		 Date
+		 CountryId
+		 Shop
+		 Sope
+		 Enpe
+		 InvoicedSale
+		 TotalNet
+		 AmountTax1
+		 AmountTax2
+		 AmountTax3
+		 Tax1
+		 Tax2
+		 Tax3
+		 SurchargeTax1
+		 SurchargeTax2
+		 AmountSTax1
+		 AmountSTax2
+		 OrderNumber 
+		 UserId
+		 UserName
+		 Incorporated
+		 Collected
+		}]
+Actions 	This service will support the use of APIs and the web.
+````
 
 
 
