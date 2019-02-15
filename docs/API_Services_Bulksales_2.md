@@ -765,7 +765,43 @@ Exit 		OK: 200.
 Actions 	Get shops in the IAM API with the token of the user.
 ````
 
+### Get Tax Types
 
+Checking the fields Tax1, Tax2, Tax3, SurchargeTax1 and SurchargeTax2: Check that the types of Taxes entered in these fields correspond to the correct taxes for the country indicated
+
+````
+ID 		GET: https://api-tpgescom.telepizza.com/api/shops/taxes
+Description 	Get taxes types for the country
+Entry 		Header:
+		{ "Authorization", "Basic " token}
+Exit 		OK: 200.
+		Body: JSON:
+		[ { “code:” string,
+		  “value”: string
+		}]
+Actions 	This service will support the use of APIs and the web.
+````
+
+### Get Expenses Types
+
+Validate the type of expense:
+
+````
+ID 		GET:
+		https://api-tpgescom.telepizza.com/api/shops/expenses?countryId=+countryId
+Description 	Get expenses types for a country
+Entry 		Header:
+		  identifier: <User Id.>
+ 		  identifierName: <User Name>
+ 		  Authorization: Bearer <access_token>
+ 		  Content-Type: application/json
+Exit 		OK: 200 en cabecera.
+		Body: JSON
+		[ { “code:” string,
+ 		  “value”: string
+		}]
+Actions 	This service will support the use of APIs and the web.
+````
 
 
 
