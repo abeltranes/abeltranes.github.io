@@ -73,9 +73,9 @@ The following cURL command shows how to generate an WSO2 access token using the 
 
 	curl -k -d "grant_type=client_credentials" \      
 
-					-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ 
+			-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ 
 
-					[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
 
 `` ID `` | GET  
    | [https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
