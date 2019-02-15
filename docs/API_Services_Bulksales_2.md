@@ -77,7 +77,7 @@ curl -k -d "grant_type=client_credentials" \
 		https://api-aws.telepizza.com/token 
 ````
 		
-~~~
+````
 ID		GET
 		https://api-aws.telepizza.com/token
 Description 	Generate Access Token
@@ -89,7 +89,7 @@ Entry 		Header:
 Exit 		OK: Code 200.
 		String with the fyle type
 Actions 	This service generate an WSO2 access token.
-~~~
+````
 
 ## Sales – Load CSV 
 
