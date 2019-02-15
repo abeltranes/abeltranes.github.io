@@ -435,11 +435,25 @@ This service save the permissions for the country
 `` Exit `` | **OK**: Code 200.
 `` Actions `` | This service will support the use of APIs and the web.  
 
+## Remove Permissions
 
+This service remomve the permissions for the country
 
-
-
-
+`` ID `` | POST  
+   | [https://api-aws.telepizza.com/bulksales.uploader/v1/sales/ RemovePermissionsShops](https://api-aws.telepizza.com/bulksales.uploader/v1/sales/ RemovePermissionsShops)
+`` Description `` | Remove the permissions for the country or the shop
+`` Entry `` | **Header**:  
+   | &nbsp;&nbsp;&nbsp;identifier: \<User Id.> 
+   | &nbsp;&nbsp;&nbsp;identifierName: \<User Name> 
+   | &nbsp;&nbsp;&nbsp;Authorization: Bearer \<access_token>
+   | &nbsp;&nbsp;&nbsp;Content-Type: application/json   
+   | **Parameters:**
+   | {   
+   | &nbsp;&nbsp;&nbsp;“countryCode”: Code for the country 
+   | &nbsp;&nbsp;&nbsp;“shopCode”: Shop code
+   | }
+`` Exit `` | **OK**: Code 200.
+`` Actions `` | This service will support the use of APIs and the web. 
 
 
 
