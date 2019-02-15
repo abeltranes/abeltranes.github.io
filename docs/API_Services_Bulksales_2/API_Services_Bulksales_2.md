@@ -61,9 +61,9 @@ The BulkSales APIs allow to load Sales and Expenses in two different ways:
 * Massive load.  
 * Manual load. 
 
-![img01.png]({{site.baseurl}}/docs/img01.png)
+![img01.png]({{site.baseurl}}/docs/API_Services_Bulksales_2/img01.png)
 
-![img02.png]({{site.baseurl}}/docs/img02.png)
+![img02.png]({{site.baseurl}}/docs/API_Services_Bulksales_2/img02.png)
 
 ##  Generate WSO2 Access Token 
 
