@@ -31,6 +31,7 @@ published: true
 Version | Date | Description | Author
 :--: | :--: | :--: | :--: 
 1.0 | 04/01/2019 | BulkSales Services | Vector
+   |   |   |   
 {: .fs-6 .fw-300 }
 
 
@@ -47,7 +48,6 @@ Name | Definition
 TPZ     | **Telepizza**           
    |   
    |
-   |
 
 ## References
 
@@ -57,9 +57,9 @@ References |   | Description
    
 # API Services Description
 
-The BulkSales APIs allow to load Sales and Expenses in two different ways: 
--Massive load. 
--Manual load. 
+The BulkSales APIs allow to load Sales and Expenses in two different ways:  
+* Massive load.  
+* Manual load. 
 
 ![img01.png]({{site.baseurl}}/docs/img01.png)
 
@@ -75,7 +75,7 @@ The following cURL command shows how to generate an WSO2 access token using the 
 
 					-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \ 
 
-					[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
+[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
 
 `` ID `` | GET  
    | [https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
@@ -149,25 +149,18 @@ Load the csv file to read the records.
 
 Once the corresponding validations have been made about the type of file and its records (correct file and mandatory fields filled in), the following checks and calls to the services will be made:
 
-- Checking Store field: Check that the store that comes in the csv file corresponds to valid store. Service defined in point 4.1.1
+* Checking Store field: Check that the store that comes in the csv file corresponds to valid store. Service defined in point 4.1.1  
+* Checking the fields Tax1, Tax2, Tax3, SurchargeTax1 and SurchargeTax2: Check that the types of Taxes entered in these fields correspond to the correct taxes for the country indicated. Service defined in point 4.1.2 
 
-- Checking the fields Tax1, Tax2, Tax3, SurchargeTax1 and SurchargeTax2: Check that the types of Taxes entered in these fields correspond to the correct taxes for the country indicated. Service defined in point 4.1.2 
+Check the quantities entered:  
+* Check that the values entered are not null or empty.  
+* For each of the channels and areas we carry out the following operations:  
+	* Check that the order number is greater than 0.  
+	* Calculate the total amounts: 
 
-Check the quantities entered:
-
-- Check that the values entered are not null or empty.
-
-- For each of the channels and areas we carry out the following operations:
-
-	-  Check that the order number is greater than 0. 
-	- Calculate the total amounts: 
-
-
-	If taxes are greather than 0:
-    
-    Total1 = ((amount1 * 100) / tax1) + amount  
-    Total2 = ((amount2 * 100) / tax2) + amount2 
-    
+	If taxes are greather than 0:  
+    Total1 = ((amount1 * 100) / tax1) + amount   
+    Total2 = ((amount2 * 100) / tax2) + amount2  
     Total3 = ((amount3 * 100) / tax3) + amount3
     
     If any of the taxes is 0 the Total will be equal to the Amount of the tax that was 0, for example, if tax1 = 0: 
@@ -176,23 +169,15 @@ Check the quantities entered:
     
     Total = Total1 + Total2 + Total3 
     
-    	-- Calculate Total net: 
-        
-	
-	&nbsp;
+    	* Calculate Total net: 
+
 	If taxes and amounts are greather than 0: 
-    
-    TotalNet1 = (amount1 * 100) / tax1 
-    
-    TotalNet2 = (amount2 * 100) / tax2
-    
-    TotalNet3 = (amount3 * 100) / tax3
-    
-    If any of the taxes is 0 the Total will be equal to the Amount of the tax that was 0, for example, if tax1 = 0: 
-    
-    TotalNet1 = amount1 
-    
-    TotalNet = TotalNet1 + TotalNet2 + TotalNet3 
+        TotalNet1 = (amount1 * 100) / tax1  
+    	TotalNet2 = (amount2 * 100) / tax2  
+	TotalNet3 = (amount3 * 100) / tax3  
+	If any of the taxes is 0 the Total will be equal to the Amount of the tax that was 0, for example, if tax1 = 0:  
+	TotalNet1 = amount1  
+	TotalNet = TotalNet1 + TotalNet2 + TotalNet3 
    
 After performing these calculations, the sales record and the log record are inserted or updatedin bbdd.  
 
