@@ -167,12 +167,11 @@ Check the quantities entered:
     
     Total1 = amount1
     
-    Total = Total1 + Total2 + Total3 
+    Total = Total1 + Total2 + Total3
     
-    	* Calculate Total net:  
-	
-	
-	If taxes and amounts are greather than 0:  
+    * Calculate Total net:
+    
+    	If taxes and amounts are greather than 0:  
         TotalNet1 = (amount1 * 100) / tax1  
     	TotalNet2 = (amount2 * 100) / tax2  
 	TotalNet3 = (amount3 * 100) / tax3  
@@ -195,7 +194,7 @@ This service obtain the currencies for the country.
    | 	Authorization: Bearer \<access_token>
    | 	Content-Type: application/json   
    | **Parameters:**
-   | \“countryCode”: Code for the country 	  
+   | “countryCode”: Code for the country 	  
 `` Exit `` | **OK**: Code 200.
    | String with the currency code.
 `` Actions `` | This service will support the use of APIs and the web.   
@@ -230,7 +229,7 @@ Save sales record.
    | 	Content-Type: application/json   
    | 	**Body**:
    | \[
-   | \ {
+   |  {
    | "date": "Store Number assigned by Telepizza SAU, with 5 digits", 
    | "shop": "Sales date",
    | "tax1": "type 1 of tax used on Telepizza",
@@ -300,7 +299,11 @@ Save sales record.
    | \}]
 `` Actions `` | This service will support the use of APIs and the web. 
 
+### Save Sales Background
 
+To load large files you can use the **savesalesback** service that saves the record in the background.
+Later you can check the status of the process from the **getUserProcessResult** and **GetUserProcess**
+services.
 
 
 
