@@ -169,9 +169,10 @@ Check the quantities entered:
     
     Total = Total1 + Total2 + Total3
     
-    * Calculate Total net:
-    
-    	If taxes and amounts are greather than 0:  
+    	* Calculate Total net:
+
+
+	If taxes and amounts are greather than 0:  
         TotalNet1 = (amount1 * 100) / tax1  
     	TotalNet2 = (amount2 * 100) / tax2  
 	TotalNet3 = (amount3 * 100) / tax3  
