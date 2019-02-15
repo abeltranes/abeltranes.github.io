@@ -171,6 +171,7 @@ Check the quantities entered:
     
     	* Calculate Total net:
 
+\
 
 	If taxes and amounts are greather than 0:  
         TotalNet1 = (amount1 * 100) / tax1  
