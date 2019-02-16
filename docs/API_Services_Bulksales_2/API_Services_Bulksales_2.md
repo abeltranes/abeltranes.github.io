@@ -802,7 +802,3 @@ Exit 		OK: 200 en cabecera.
 		}]
 Actions 	This service will support the use of APIs and the web.
 ````
-
-
-
-
