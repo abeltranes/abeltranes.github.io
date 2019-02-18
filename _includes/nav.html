@@ -1,6 +1,6 @@
 <nav role="navigation" aria-label="Main navigation">
   <ul class="navigation-list">
-    {% assign page.url == node.url or page.parent == node.title | sort:"nav_order" %}
+    {% assign page.url == node.url | sort:"nav_order" %}
     {% for node in pages_list %}
       {% unless node.nav_exclude %}
         {% if node.parent == nil %}
