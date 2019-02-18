@@ -26,11 +26,11 @@ blablabla
 
 blablabla
 
-### encabezado 3.2
----
+### encabezado 3.5
+<ol>
 1. TOC
 {:toc}
----
+</ol>
 #### encabezado 4
 
 blablabla
