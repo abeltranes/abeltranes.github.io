@@ -54,16 +54,16 @@
         {% endunless %}
         <div id="main-content" class="page-content" role="main">
           {{ content }}
-
+          <p>0002</p>
           {% if page.has_children == true and page.has_toc != false %}
           <hr>
-          <h2 class="text-delta">Table of contents</h2>
-          {% assign children_list = site.pages | sort:"nav_order" %}
+          <h2 class="text-delta">Table of contents0003</h2>
+          {% assign children_list = site.pages | sort:"nav_order" %}0004
           <ul>
             {% for child in children_list %}
-              {% if child.parent == page.title and child.title != page.title %}
+              {% if child.parent == page.title and child.title != page.title %}00005
               <li>
-                <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
+                <a href="{{ child.url | absolute_url }}">{{ child.title }}00006</a>
               </li>
               {% endif %}
             {% endfor %}
