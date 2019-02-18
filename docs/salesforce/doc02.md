@@ -27,10 +27,10 @@ blablabla
 blablabla
 
 ### encabezado 3.3
-
+---
 1. TOC
 {:toc}
-
+---
 #### encabezado 4
 
 blablabla
