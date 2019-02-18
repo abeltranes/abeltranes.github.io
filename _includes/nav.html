@@ -1,12 +1,12 @@
 <nav role="navigation" aria-label="Main navigation">
   <ul class="navigation-list">
+          <!--**********************************************-->
+          {% if page.url = node.url %}
+          {% assign nav_exclude == false %}
+          {% endif %}
+          <!--**********************************************-->
     {% assign pages_list = site.html_pages | sort:"nav_order" %}
     {% for node in pages_list %}
-      <!--**********************************************-->
-      {% if page.url != node.url %}
-      {% assign nav_exclude == false %}
-      {% endif %}
-      <!--**********************************************-->
       {% unless node.nav_exclude %}
         {% if node.parent == nil %}
           <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
