@@ -28,7 +28,8 @@ blablabla
 
 ### encabezado 3
 
-blablabla
+1. TOC
+:toc
 
 #### encabezado 4
 
