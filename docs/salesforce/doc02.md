@@ -27,10 +27,9 @@ blablabla
 blablabla
 
 ### encabezado 3.5
-<ol>
-1. TOC
-{:toc}
-</ol>
+
+nain
+
 #### encabezado 4
 
 blablabla
