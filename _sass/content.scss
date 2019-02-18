@@ -21,6 +21,9 @@
     list-style-type: none;
     counter-reset: step-counter;
     background-color: aquamarine;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
     > li {
       position: relative;
