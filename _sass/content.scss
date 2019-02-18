@@ -20,6 +20,7 @@
   ol {
     list-style-type: none;
     counter-reset: step-counter;
+    background-color: aquamarine;
 
     > li {
       position: relative;
