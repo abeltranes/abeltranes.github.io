@@ -4,7 +4,7 @@
     {% for node in pages_list %}
       <!--**********************************************-->
       {% if page.url != node.url %}
-      {% assign nav_exclude = false %}
+      {% assign nav_exclude == false %}
       {% endif %}
       <!--**********************************************-->
       {% unless node.nav_exclude %}
