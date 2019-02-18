@@ -4,11 +4,11 @@
     {% for node in pages_list %}
       {% unless node.nav_exclude %}
         {% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %}
-          <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
+          <li class="navigation-list-item{% if page.url == node.url %} active{% endif %}">
             {% if page.parent == node.title or page.grand_parent == node.title %}
               {% assign first_level_url = node.url | absolute_url %}
             {% endif %}
-            <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == page.parent %} active{% endif %}">01{{ node.title }}</a>
+            <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">01{{ node.title }}</a>
             {% if node.has_children %}
               {% assign children_list = site.html_pages | sort:"nav_order" %}
               <ul class="navigation-list-child-list ">
