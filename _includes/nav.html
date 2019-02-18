@@ -8,13 +8,7 @@
             {% if page.parent == node.title  %}
               {% assign first_level_url = node.url | absolute_url %}
             {% endif %}
-            <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">01{{ node.title }}</a>
-            <p>02{{node.title}}</p>
-            <p>03{{page.parent}}</p>
-            <p>04{{node.url}}</p>
-            <p>05{{page.url}}</p>
-            <p>06{{child.url}}</p>
-            <p>07{{child.title}}</p>
+            <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url and node.title == page.parent %} active{% endif %}">01{{ node.title }}</a>
             {% if node.has_children %}
               {% assign children_list = site.html_pages | sort:"nav_order" %}
               <ul class="navigation-list-child-list ">
