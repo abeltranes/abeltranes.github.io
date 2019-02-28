@@ -21,7 +21,7 @@
     
 <!-- ************************************** ESTILOS ***********************************************--> 
 <style>
-.sidenav {
+.sidenav01 {
   height: 100%;
   width: 0;
   position: fixed;
@@ -33,7 +33,7 @@
   transition: 0.5s;
   padding-top: 60px;
 }
-.sidenav a {
+.sidenav01 a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -41,10 +41,10 @@
   display: block;
   transition: 0.3s;
 }
-.sidenav a:hover {
+.sidenav01 a:hover {
   color: #f1f1f1;
 }
-.sidenav .closebtn {
+.sidenav01 .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -59,8 +59,9 @@
 <!-- ************************************** ESTILOS ***********************************************--> 
     
 <!-- ************************************** MENU *************************************************-->     
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav01">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
   <a href="http://docs.telepizza.com/">Home</a>
   
   <a href="{% include nav01.html %}"></a>
