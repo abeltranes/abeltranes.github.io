@@ -151,15 +151,14 @@
   <a href="" id="menuToggle" title="show menu">
     <span class="navClosed"><i>show menu</i></span>
   </a>
-  <a href="#" title="Item 1">Item 1</a>
-  <a href="#" title="Item 22">Item 22</a>
-  <a href="#" title="Item 3">Item 3</a>
-  <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
-  <a href="#" title="Item 33">Item 33</a> 
     
-  <a href="#" title="Item 4">Item 4</a>
-
-  <a href="#" title="Item 5">Item 5</a>  
+  <a href="#" title="Item 1">Item 1</a>
+  <a href="#" title="Item 2">Item 2</a>
+  
+  <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+ <a href="#" title="Item 3">Item 3</a>
+ <a href="#" title="Item 4">Item 4</a>
+ <a href="#" title="Item 5">Item 5</a>  
   </nav>    
 
   
