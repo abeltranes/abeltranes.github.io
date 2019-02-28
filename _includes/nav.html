@@ -1,4 +1,5 @@
-<body>
+<nav role="navigation" aria-label="Main navigation">
+  
   <link rel="stylesheet" href="css/style.css">
   <a id="open-hide" class="open-hide">Menu</a>
   <ul id="menu" class="menu">
@@ -6,11 +7,9 @@
   <li><a href="">Portfolio</a></li>
   <li><a href="">Contacto</a></li>    
   </ul>  
- <script  src="js/index.js"></script>
-</body>
-
-
-<nav role="navigation" aria-label="Main navigation">
+  <script  src="js/index.js"></script>
+  
+  
   <ul class="navigation-list">
    {% assign pages_list = site.html_pages | sort:"nav_order" %}
     {% for node in pages_list %}
