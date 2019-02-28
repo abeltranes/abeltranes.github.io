@@ -56,30 +56,18 @@
           {{ content }}
           {% if page.has_children == true and page.has_toc != false %}
           <hr>
-          <h2 class="text-delta">Table of contents</h2>
-<p>01</p>
+          <h2 class="text-delta">Table of contents<p>*****01******</p></h2>
           {% assign children_list = site.pages | sort:"nav_order" %}
-<p>02</p>
           <ul>
-<p>03</p>
             {% for child in children_list %}
-<p>04</p>  
             {% if child.parent == page.title and child.title != page.title %}
-<p>05</p>  
             <li>
-<p>06</p>
-                <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
-<p>07</p>
+                <a href="{{ child.url | absolute_url }}">{{ child.title }}<p>*****02******</p></a>
             </li>
-<p>08</p>
               {% endif %}
-<p>09</p>
             {% endfor %}
-<p>10</p>
           </ul>
-<p>11</p>
           {% endif %}
-<p>12</p>
         </div>
       </div>
     </div>
