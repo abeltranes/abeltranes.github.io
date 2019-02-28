@@ -9,7 +9,7 @@ nav_order: 3
 {: .no_toc }
 
 ## Tabla de contenidos
-{: .no_toc .text-delta }
+
 
 1. TOC
 {:toc}
