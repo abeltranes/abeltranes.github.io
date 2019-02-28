@@ -1,3 +1,11 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+
+  
+  
+  
+  
 <nav role="navigation" aria-label="Main navigation">
   <ul class="navigation-list">
    {% assign pages_list = site.html_pages | sort:"nav_order" %}
@@ -43,6 +51,21 @@
   </ul>
 </nav>
 
+  
+  
+  
+  
+  
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
   
