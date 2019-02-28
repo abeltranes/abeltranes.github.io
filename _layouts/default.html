@@ -37,17 +37,29 @@
         </div>
       </div>
       <div class="main-content">
+<p>01</p>
         {% unless page.url == "/" %}
+<p>02</p>
           {% if page.parent %}
+<p>03</p>
             <nav class="breadcrumb-nav">
+<p>04</p>
               <ol class="breadcrumb-nav-list">
+<p>05</p>
                 {% if page.grand_parent %}
-                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
-                  <li class="breadcrumb-nav-list-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
+<p>06</p>  
+                <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
+<p>07</p>  
+                <li class="breadcrumb-nav-list-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
+<p>08</p>
                 {% else %}
-                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
+<p>09</p>  
+                <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
+<p>10</p>
                 {% endif %}
+<p>11</p>
                 <li class="breadcrumb-nav-list-item"><span>{{ page.title }}</span></li>
+<p>12</p>
               </ol>
             </nav>
           {% endif %}
