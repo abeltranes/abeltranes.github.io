@@ -37,29 +37,17 @@
         </div>
       </div>
       <div class="main-content">
-<p>01</p>
         {% unless page.url == "/" %}
-<p>02</p>
           {% if page.parent %}
-<p>03</p>
             <nav class="breadcrumb-nav">
-<p>04</p>
               <ol class="breadcrumb-nav-list">
-<p>05</p>
                 {% if page.grand_parent %}
-<p>06</p>  
                 <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
-<p>07</p>  
                 <li class="breadcrumb-nav-list-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
-<p>08</p>
                 {% else %}
-<p>09</p>  
                 <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
-<p>10</p>
                 {% endif %}
-<p>11</p>
                 <li class="breadcrumb-nav-list-item"><span>{{ page.title }}</span></li>
-<p>12</p>
               </ol>
             </nav>
           {% endif %}
@@ -69,17 +57,29 @@
           {% if page.has_children == true and page.has_toc != false %}
           <hr>
           <h2 class="text-delta">Table of contents</h2>
+<p>01</p>
           {% assign children_list = site.pages | sort:"nav_order" %}
+<p>02</p>
           <ul>
+<p>03</p>
             {% for child in children_list %}
-              {% if child.parent == page.title and child.title != page.title %}
-              <li>
+<p>04</p>  
+            {% if child.parent == page.title and child.title != page.title %}
+<p>05</p>  
+            <li>
+<p>06</p>
                 <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
-              </li>
+<p>07</p>
+            </li>
+<p>08</p>
               {% endif %}
+<p>09</p>
             {% endfor %}
+<p>10</p>
           </ul>
+<p>11</p>
           {% endif %}
+<p>12</p>
         </div>
       </div>
     </div>
