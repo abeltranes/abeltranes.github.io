@@ -15,13 +15,16 @@
                         {% assign second_level_url = child.url | absolute_url %}
                       {% endif %}
                        <a href="{{ child.url | absolute_url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
-                        <a href="#"> the end </a>
                   </li>
+                        <a href="#"> the end 01 </a>                  
                   {% endif %}
                 {% endfor %}
               </ul>
+                        <a href="#"> the end 02 </a>
             {% endif %}
           </li>
+                        <a href="#"> the end 03 </a>
         {% endif %}
       {% endunless %}
     {% endfor %}
+                        <a href="#"> the end 04 </a>
