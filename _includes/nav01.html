@@ -19,7 +19,7 @@
                         {% assign second_level_url = child.url | absolute_url %}
                       {% endif %}
                       <a href="{{ child.url | absolute_url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
-                      {% if child.has_children %}
+            <!--          {% if child.has_children %}
                         {% assign grand_children_list = site.html_pages | sort:"nav_order" %}
                         <ul class="navigation-list-child-list">
                           {% for grand_child in grand_children_list %}
@@ -30,7 +30,7 @@
                             {% endif %}
                           {% endfor %}
                         </ul>
-                      {% endif %}
+                      {% endif %}             -->
                     </li>
                   {% endif %}
                 {% endfor %}
