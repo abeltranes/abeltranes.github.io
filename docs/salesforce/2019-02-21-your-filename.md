@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: probando
 title: doc
 parent: Salesforce
 nav_order: 5
