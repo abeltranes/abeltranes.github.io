@@ -3,7 +3,7 @@ layout: default
 title: Salesforce
 nav_order: 4
 has_children: true
-permalink: docs/salesforce
+permalink: docs/prueba
 ---
 
 # Salesforce
