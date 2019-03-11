@@ -2,12 +2,15 @@
 layout: Main
 title: Salesforce
 nav_order: 4
-has_children: true
+has_children: false
 permalink: docs/prueba
 ---
 
-# Salesforce
-{: .no_toc }
 
-Documentación de la plataforma Salesforce aplicada al proyecto Telepizza desarrollado por Vector ITC Group.
-{: .fs-6 .fw-300 }
+### Proyecto 1
+Documentación sobre el proyceto 1, aquí podrás encontrar toda la documentación y el funconamiento del mismo.
+{: .card-title .card-text}
+
+### Proyecto 2
+Documentación sobre el proyceto 2, aquí podrás encontrar toda la documentación y el funconamiento del mismo.
+{: .card-title .card-text}
