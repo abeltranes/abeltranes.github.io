@@ -1,0 +1,33 @@
+{% include header.html %}
+
+{% include hero.html classes='u-bg-gray-30 u-pt-16 u-pb-10' %}
+{% if page.features %}
+<div class="o-container">
+		<div class="o-row">
+			<div class="o-col-12">
+				<div class="o-row">
+					{% for item in page.features.grid %}
+						<div class="o-col-6@lg u-mb-3">
+							<a href="{{ item.url }}" class="c-feature-card c-feature-card--large">
+								<div class="c-feature-card__content">
+									{% if item.title %}
+										<h4 class="c-feature-card__title">{{ item.title }}</h4>
+									{% endif %}
+									{% if item.description %}
+										<p>{{ item.description }}</p>
+									{% endif %}
+									<button class="c-feature-card__cta">
+									Read More
+										<i class="o-icon o-icon--arrow-right"></i>
+									</button>
+								</div><!-- /.c-featured-card__content -->
+							</a><!-- /.c-feature-card -->
+						</div><!-- /.col -->
+					{% endfor %}
+				</div><!-- /.o-row -->
+			</div><!-- /.col -->
+		</div><!-- /.o-row -->
+	</div><!-- /.o-container -->
+{% endif%}
+{{content}}
+{% include footer.html %}
