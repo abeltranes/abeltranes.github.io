@@ -1,12 +1,12 @@
 {% include header.html %}
 
 {% include hero.html classes='u-bg-gray-30 u-pt-16 u-pb-10' %}
-{% if page.features %}
+{% if page.items %}
 <div class="o-container">
 		<div class="o-row">
 			<div class="o-col-12">
 				<div class="o-row">
-					{% for item in page.features.grid %}
+					{% for item in page.items.grid %}
 						<div class="o-col-6@lg u-mb-3">
 							<a href="{{ item.url }}" class="c-feature-card c-feature-card--large">
 								<div class="c-feature-card__content">

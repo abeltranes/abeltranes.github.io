@@ -10,7 +10,7 @@ hero:
     title: Proyecto 2
     text: Descripción del proyecto 2
 # Features section
-features:
+items:
           grid: # Add feature grid items below, there are examples with all available options
               - title: Documento 1
                 description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
