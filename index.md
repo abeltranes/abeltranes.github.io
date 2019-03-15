@@ -7,54 +7,110 @@ keywords: # Define keywords for search engines
 
 # Hero section
 hero:
-    title: Hero section — Title
-    text: Hero section — Text
+    title: Sistemas de Información
+    text: Telepizza
     background_image: # Paste image URL to display image in background of hero section
-    buttons: # Add buttons below, there are examples with all available options
-        - label: Button — Filled with icon
-          url: http://example.com
-          external_url: true # Set to "false" if you're pointing to inner page
-          style: filled # Choose style: "filled" or "bordered"
-          icon: github # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
-        - label: Button — Bordered with icon
-          url: /documentation/project-1/index-doc
-          external_url: false
-          style: bordered
-          icon: gitlab
-    download_link: # Set small download link placed below buttons
-        label: Download — v4.0.0
-        url: https://example.com
 
 # Features section
 features:
     rows: # Add feature rows below, there are examples with all available options
-        - title: Documentación de proyectos para Telepizza
-          description: Desarrollado por Vector ITC Group
+        - title: Nueva App 5.0
+          description: Funcionalidades Noviembre 2016, Versión 1.0
           grid: # Add feature grid items below, there are examples with all available options
-              - title: Proyecto 1
+              - title: Objetivo
                 description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
                 icon: file-text # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
                 url: /documentation/project-1/index-doc
-              - title: Proyecto 2
+              - title: Llamada inicial de la app
                 description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
                 icon: file-text
                 url: /documentation/project-2/index-doc
-              - title: Proyecto 3
+              - title: Flujo de llamadas a los servicios 
                 description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
                 icon: file-text
                 url: /documentation/project-3/index-doc
-    footer: # Set features section footer variables
-        title: Features footer — Title
-        description: Features footer — Description
-        buttons: # Add buttons below, there are examples with all available options
-            - label: Button — Filled
-              url: http://example.com
-              external_url: true # Set to "false" if you're pointing to inner page
-              style: filled # Choose style: "filled" or "bordered"
-              icon: # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
-            - label: Button — Bordered
-              url: /documentation
-              external_url: false
-              style: bordered
-              icon:
+              - title: Servicio de aviso bloqueante
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Re-Login
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Obtener dirección
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Gestión de usuario
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Catálogo de productos
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Características de catálogo
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Pedido
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Usuario anónimo
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Promociones
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Cupones
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Country Settings
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Medios de pago
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Pasarelas de pago
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Pago externo con tokenización
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Pago externo con captura
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Factura
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Grabar pedido
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Tracker (estados pedidos)
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Localizador de tiendas
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Listado de errores
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
+              - title: Double Click
+                description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
+                icon: file-text
+                url: /documentation/project-3/index-doc
 ---

@@ -11,7 +11,10 @@
 							<a href="{{ item.url }}" class="c-feature-card c-feature-card--large">
 								<div class="c-feature-card__content">
 									{% if item.title %}
-										<h4 class="c-feature-card__title">{{ item.title }}</h4>
+										<h4 class="c-feature-card__title">
+											<i class="o-icon o-icon--file-text"></i>
+											 {{ item.title }}
+										</h4>
 									{% endif %}
 									{% if item.description %}
 										<p>{{ item.description }}</p>
