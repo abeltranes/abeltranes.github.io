@@ -67,11 +67,11 @@ El usuario anónimo tiene una serie de particularidades, que hace que tengan una
 ● Cupón de entrada. No puede introducir cupones de entrada, por lo que esta sección no tiene que aparecer en la pantalla de promociones.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/30"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/30.png"/>
 </p>
 
 ● Registro. Cuando se realiza un pedido de manera anónima, se da la opción en la última pantalla, justo antes de seleccionar el medio de pago, que el usuario se registre. Esta opción sólo se mostrará en el usuario anónimo.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/31"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/31.png"/>
 </p>
