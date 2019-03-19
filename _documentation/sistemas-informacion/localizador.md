@@ -63,7 +63,7 @@ menu:
 Desde el menú de usuario, ya sea registrado o sin registrar, se puede acceder al localizador de tiendas. Para ello, hay que llamar al servicio POST /store/near, pasándole por pasándole por el body, la latitud y longitud de la dirección introducida por el usuario. Este servicio devolverá un array con las tiendas cercanas a este punto, así como toda la información necesaria para poder pintar la pantalla.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/45.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/45.PNG"/>
 </p>
 
 ###### Ficha de tienda 

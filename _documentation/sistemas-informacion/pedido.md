@@ -86,13 +86,13 @@ Para agregar un producto simple, será necesario completar el identificador del 
 Dado que un producto simple no dispone de elecciones, la propiedad ​choices ​viajará como ​NULL.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/21.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/21.PNG"/>
 </p>
 
 En la imagen se detalla la relación entre las propiedades del JSON de entrada y el catálogo 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/22.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/22.PNG"/>
 </p>
 
 ##### Productos compuestos
@@ -104,13 +104,13 @@ Los productos compuestos deberán informar obligatoriamente la propiedad ​ cho
 La propiedad ​ SecondProduct ​​ no será informada.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/23.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/23.PNG"/>
 </p>
 
 En la imagen se detalla la relación entre las propiedades del JSON de entrada y el catálogo
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/24.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/24.PNG"/>
 </p>
 
 ##### Productos por mitades 
@@ -122,13 +122,13 @@ La propiedad ​ choices ​​ deberá ser informada
 Las choices escogidas en cada una de las mitades, deberán ser compatibles entresi, al igual que la propiedad size.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/25.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/25.PNG"/>
 </p>
 
 La relación de propiedades es ​ exactamente igual ​ al producto compuesto.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/26.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/26.PNG"/>
 </p>
 
 ##### Eliminar un producto 
@@ -136,13 +136,13 @@ La relación de propiedades es ​ exactamente igual ​ al producto compuesto.
 Para eliminar un producto de un pedido, debemos indicar a la API el número de línea de dicho                  producto. Dicho valor puede recuperarse del carrito.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/27.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/27.PNG"/>
 </p>
 
 Eliminar la misma línea varias veces provocará un mensaje de error por parte de la API. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/28.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/28.PNG"/>
 </p>
 
 ##### Respuesta de la API 
@@ -150,5 +150,5 @@ Eliminar la misma línea varias veces provocará un mensaje de error por parte d
 En cualquiera de los casos en los que se añade un producto a un pedido, la API siempre retornará un objeto carrito con la relación de productos, promociones y totales.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/29.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/29.PNG"/>
 </p>

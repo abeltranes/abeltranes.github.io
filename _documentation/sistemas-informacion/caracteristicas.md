@@ -117,7 +117,7 @@ Quesos: 12 -> En la primera pantalla en la posición 2
 Ingredientes: 21 -> En la segunda pantalla en la posición 1
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/18.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/18.PNG"/>
 </p>
 
 ##### Obtener precio de un producto
@@ -127,13 +127,13 @@ Dado que la configuración de un producto compuesto puede implicar que el precio
 El endpoint espera en el body de la petición un array de elecciones separados por mitades:
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/19.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/19.PNG"/>
 </p>
 
 Y siempre devolverá un objeto “price” con el resultado de la consulta a la base de datos.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/20.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/20.PNG"/>
 </p>
 
 Salvo excepción, el método siempre devolverá un precio que podrá o no ser correcto. Esto esasí porque el núcleo no valida que la combinación de elecciones sea correcta ala hora de devolver el precio, por lo que en caso de error, se devolverá el precio de la combinación por defecto.

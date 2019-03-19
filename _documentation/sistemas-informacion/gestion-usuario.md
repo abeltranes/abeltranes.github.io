@@ -82,7 +82,7 @@ Existe una serie de servicios que no son obligatorios de utilizar para grabar un
 Para reestablecer la contraseña de un usuario, será necesario invocar el método recoverpassword de la API pasando a través del body de la petición la dirección de correo electrónico. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/12.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/12.PNG"/>
 </p>
 
 Este método no devolverá más que un código de respuesta HTTP.Si todo es correcto será “ 204 No content ”.
@@ -94,7 +94,7 @@ La aplicación invocará entonces al método changepassword pasando por URL el h
 changepassword/3EF94A0DEE24D5B5028EFE69A3D69F282641F7BE49C9AEBCF5DF07793C941850023EB131
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/13.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/13.PNG"/>
 </p>
 
 ##### Obtener y modificar datos personales del usuario

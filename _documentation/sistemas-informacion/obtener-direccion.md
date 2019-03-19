@@ -97,7 +97,7 @@ El modelo de vista que hay que mostrar en cada país, vendrá indicado en el ser
 
 #### España  
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/2.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/2.PNG"/>
 </p>
 
 Para el primer paso, hay que llamar a los servicios Rest para obtener la dirección que hay que mostrar en el GPS. El apirest es ​get adress\street. ​​Este servicio devolverá el objeto “simulado” del heremap mas el idPortal.
@@ -108,7 +108,7 @@ En caso que el usuario modifique los datos devueltos por la apiRest, nos tendré
 La entrada de búsqueda de calles, se hará por código postal que se mostrará en  la primera pantalla. Posteriormente, en la pantalla final se mostrará el listado de calles en el combo, para que el usuario seleccione la dirección concreta en el caso de Portugal y UK. Para Suiza, se dejará la caja de texto de la calle vacía, para que el usuario pueda introducir en este punto el nombre de la calle. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/3.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/3.PNG"/>
 </p>
 
 En Portugal, se mostrarán dos cajas de texto para introducir el código postal, y no habrá sugerencias de calles al igual que tampoco lo habrá en UK ni Suiza.
@@ -117,7 +117,7 @@ En Portugal, se mostrarán dos cajas de texto para introducir el código postal,
 La entrada de búsqueda de calles, se hará por código postal.  En las sugerencias que se muestran asociadas a lo que haya introducido el usuario en la pantalla principal, mostrar (si es posible), Nombre de Calle / CP / Localidad / nº portal si ya lo especifica usuario. Posteriormente, en la pantalla final se mostrará la siguiente información:
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/4.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/4.PNG"/>
 </p>
 
 El código postal introducido en la primera pantalla, y no se podrá modificar.
@@ -129,11 +129,11 @@ La entrada de datos se tiene que hacer como está actualmente, es decir, se ha d
 El servicio al que hay que llamar es ​ http://test.apirest.telepizza.es/address/addresslevels. Este servicio devuelve las localidades a pintar en el primer combo y las calles de cada una de las localidades para pintar en el segundo combo. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/5.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/5.PNG"/>
 </p>
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/6.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/6.PNG"/>
 </p>
 
 Una vez seleccionado los valores en el combo, hay que hacer una llamada al servicio POST /address/portal para obtener el idPortal que será necesario para enviar posteriormente al servicio get/hours.
@@ -150,18 +150,18 @@ Ejemplo: 98/15-11 bogota
 Hay que cambiar la búsqueda en domicilio.  El apiRest al que hay que llamar es GET /address/cities y devuelve un array con el nombre de las ciudades a mostrar en el combo. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/7.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/7.PNG"/>
 </p>
 
 #### Resto de países
 Por polígono. En la pantalla inicial se añadirá una caja para que el usuario introduzca la dirección y se busque la tienda por polígono. En la pantalla final, se introducirán los datos exactos de la dirección, para poder localizar el idPortal del callejero de Telepizza (provincia, localidad, nombre calle y número).
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/8.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/8.PNG"/>
 </p>
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/9.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/9.PNG"/>
 </p>
 
 #### Objeto Here Map
@@ -271,7 +271,7 @@ Si la tienda que da servicio ala dirección indicada está cerrada en ese moment
 En la pantalla final antes de realizar el pago, es dónde se va a completar la dirección de entrega.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/10.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/10.PNG"/>
 </p>
 
 Dependiendo del país, la información se solicitará de una manera uotra.Paraello,sehacreado un servicio que será el encargado de proporcionar esta información, para que sea el frontal el encargado de pintarlo.
@@ -279,7 +279,7 @@ Dependiendo del país, la información se solicitará de una manera uotra.Parael
 El objeto que se va a devolver es el siguiente:
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/11.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/11.PNG"/>
 </p>
 
 ● Principal_filter: se muestra todos los elementos necesarios para pintar la pantalla según el país

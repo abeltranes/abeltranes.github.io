@@ -65,7 +65,7 @@ Los cupones se aplican al pedido desde el endpoint:
 La respuesta será: 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/43.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/43.PNG"/>
 </p>
 
 Ejemplo de códigos de cupón. 
@@ -95,5 +95,5 @@ E2H9MKMYU
 ##### Códigos de respuesta 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/44.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/44.PNG"/>
 </p>

@@ -98,5 +98,5 @@ Este aviso, se va a realizar, a través de un json, que tiene que tener las sigu
  El diseño de los avisos será similar a las pantallas del onBoarding
 
  <p style="text-align: center;" >
- <img src="/dox-theme/assets/images/docs/sistemas-informacion/1.png" alt="Markdown Monster icon"/>
+ <img src="/dox-theme/assets/images/docs/sistemas-informacion/1.PNG" alt="Markdown Monster icon"/>
  </p>

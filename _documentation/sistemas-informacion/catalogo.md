@@ -139,13 +139,13 @@ En el nuevo catálogo la información se estructura en 6 entidades (Categorías,
 Los datos expuestos en el catálogo se estructuran como entidades maestras independientes,pero todas están relacionadas a través de sus IDsrespetandolajerarquía:Categoría → Subcategoría → Producto → Tamaño → Elección → Ingrediente. De esta forma, una entidad superior contendrá los IDs de las entidades que dependen de ella.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/14.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/14.PNG"/>
 </p>
 
 Para descender de nivel en el catálogo, solo es necesario recuperar los identificadores delarray               correspondiente.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/15.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/15.PNG"/>
 </p>
 
 ##### Productos simples y compuestos
@@ -155,11 +155,11 @@ Para verificar si un producto es simple o compuesto, basta con comprobar el arra
 Por ejemplo, el producto 999990001261684 – Lata Fanta Naranja es un producto simple porque el “size” de ese producto, no tiene ningún “choice”.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/16.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/16.PNG"/>
 </p>
 
 Por otro lado, el producto 999990004249908 – Pizza Delicheese es un producto compuesto porque sus “sizes” tienen varios elementos en el array de “choices”. Es decir, ese producto tiene varias combinaciones. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/17.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/17.PNG"/>
 </p>

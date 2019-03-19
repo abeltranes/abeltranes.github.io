@@ -98,7 +98,7 @@ Las ofertas y los menús tienen la misma estructura de salida. Se indica en cada
 El endpoint es ​ /order/promotions/offers 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/32.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/32.PNG"/>
 </p>
 
 ##### Menús
@@ -106,7 +106,7 @@ El endpoint es ​ /order/promotions/offers
 El endpoint es ​ /order/promotions/menus
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/33.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/33.PNG"/>
 </p>
 
 ##### Promociones del carrito 
@@ -116,7 +116,7 @@ El endpoint es ​ /order/promotions/cart
 En el carrito pueden aplicarse promociones especiales. Este tipo de promociones no disponen de imagen. Este método podrá invocarse siempre que haya productos en el carrito. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/34.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/34.PNG"/>
 </p>
 
 ##### Obtener pantallas y productos de una promoción
@@ -128,7 +128,7 @@ En cada una de las pantallas deberán mostrarse el conjunto de productos asociad
 Los productos, tamaños, elecciones e ingredientes guardan la misma estructurayrelaciones que el catálogo general de productos, con lasalvedaddequeaquínoseincluyenlascategoríasy subcategorías. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/35.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/35.PNG"/>
 </p>
 
 El endpoint es ​ /order/promotions/{ID_PROMOCION}/products 
@@ -142,13 +142,13 @@ La recuperación de regalos está condicionada a que el campo has_gifts del obje
 Para obtener los regalos debemos indicar el valor ​ group_id ​​ del objeto ​ gifts ​​ de la promoción Si una promoción tiene regalos pero no hay unidades, ​ no ​​ se devolverán en la llamada a la API.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/36.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/36.PNG"/>
 </p>
 
 La estructura de salida para los regalos es la siguiente:
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/37.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/37.PNG"/>
 </p>
 
 El endpoint es ​ /order/promotions/{code}/gifts 
@@ -158,7 +158,7 @@ El endpoint es ​ /order/promotions/{code}/gifts
 Antes de aplicar una promoción, debemos agregar al carrito todos los productos que puedan estar incluidos en la misma. En caso contrario recibiremos un mensaje de error.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/38.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/38.PNG"/>
 </p>
 
 Para aplicar una promoción, solo es necesario llamar a la API indicando el identificador de la                promoción. El ​body de la petición, siempre llevará la propiedad gifts_id.
@@ -168,7 +168,7 @@ Las promociones se aplican a todos los productos compatibles incluidos en el ped
 La respuesta de la API indicará las promociones aplicadas en la propiedad promotions. Y los productos sobre los que se aplica la promoción mediante la propiedad is_promoted.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/39.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/39.PNG"/>
 </p>
 
 ###### Sin regalo 
@@ -176,7 +176,7 @@ La respuesta de la API indicará las promociones aplicadas en la propiedad promo
 La propiedad ​ gifts_id ​se enviará vacía
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/40.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/40.PNG"/>
 </p>
 
 ###### Con regalo
@@ -184,7 +184,7 @@ La propiedad ​ gifts_id ​se enviará vacía
 La propiedad ​ gifts_id ​​ se enviará con los identificadores de los regalos. 
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/41.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/41.PNG"/>
 </p>
 
 El endpoint es ​ /order/promotions/{ID_PROMOCION}
@@ -194,7 +194,7 @@ El endpoint es ​ /order/promotions/{ID_PROMOCION}
 El funcionamiento inverso al procedimiento de aplicar promoción. Se debe enviar a la API el identificador de la promociónquedeseamoseliminar.Estaseeliminaráparatodoslosproductos a los que se haya aplicado. La API devolverá si corresponde, un carrito con los importes actualizados.
 
 <p style="text-align: center;">
-	<img src="/dox-theme/assets/images/docs/sistemas-informacion/42.png"/>
+	<img src="/dox-theme/assets/images/docs/sistemas-informacion/42.PNG"/>
 </p>
 
 El endpoint es ​ /order/promotions/{ID_PROMOCION
