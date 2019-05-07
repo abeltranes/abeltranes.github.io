@@ -1,53 +1,40 @@
-# Theme settings
-dox:
-    baseurl:
-    title: Docs Telepizza
-    theme_color: '#0976f8' # Define theme primary color with HEX value
-    language: en-US # Use ISO language and country codes to setup language of your website - https://www.w3schools.com/tags/ref_language_codes.asp and https://www.w3schools.com/tags/ref_country_codes.asp
-    header:
-        logo:
-            text: Project Name
-            image:
-        nav:
-            - item_name: Homepage
-              item_url: /
-            - item_name: Default Layout
-              item_url: /default
-        cta:
-            label: Documentation
-            url: /documentation
-            icon: folder # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
-    footer:
-        logo:
-            text: Project name
-            image:
-        text: Copyright &copy; 2018. - Project name <br>All rights reserved.
-    google_analytics:
-        tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
-    comments:
-        disqus_forum_shortname: # Add your Disqus forum shortname to activate comments site-wide
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Defining collections
-collections:
-    documentation:
-        output: true
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Just the Docs
+description: A Jekyll theme for documentation
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://pmarsceill.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Defining defaults
-defaults:
-    -
-        scope:
-            path: ''
-            type: 'documentation'
-        values:
-            layout: 'documentation-single'
+permalink: pretty
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
-# SASS settings
-sass:
-    sass_dir: ./dox-theme/_sass
-    style: :compressed
+# Enable or disable the site search
+search_enabled: true
 
-# Jekyll settings
-layouts_dir: ./dox-theme/_layouts
-includes_dir: ./dox-theme/_includes
-exclude: [ 'README.md', 'CHANGELOG.md' ]
-permalink: /:title/
+# Aux links for the upper right navigation
+aux_links:
+  "Just the Docs on GitHub":
+    - "//github.com/pmarsceill/just-the-docs"
+
+# Color scheme currently only supports "dark" or nil (default)
+color_scheme: nil
+
+# Google Analytics Tracking (optional)
+# e.g, UA-1234567-89
+ga_tracking: UA-2709176-10
+
+plugins:
+  - jekyll-seo-tag

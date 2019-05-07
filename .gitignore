@@ -1,22 +1,6 @@
-# ------
-# Common
-# ------
-*~
-.DS_Store
-.svn
-.cvs
-*.bak
-*.swp
-Thumbs.db
-
-# -----------------------
-# Local Development Tools
-# -----------------------
-/node_modules
-/npm-debug.log
-
-# ---------------
-# Compiled assets
-# ---------------
+*.gem
+.bundle
 .sass-cache
 _site
+Gemfile.lock
+node_modules
