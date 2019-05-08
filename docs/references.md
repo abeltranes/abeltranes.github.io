@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Customization
-nav_order: 6
+title: References
+nav_order: 4
 ---
 
 # Customization

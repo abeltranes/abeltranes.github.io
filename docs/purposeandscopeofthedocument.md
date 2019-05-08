@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Search
-nav_order: 7
+title: Purpose and scope of the document
+nav_order: 2
 ---
 
 # Search

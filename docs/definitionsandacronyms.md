@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Navigation Structure
-nav_order: 5
+title: Definitions and acronyms
+nav_order: 3
 ---
 
 # Navigation Structure
@@ -59,7 +59,7 @@ nav_exclude: true
 
 ## Pages with children
 
-Sometimes you will want to create a page with many children (a section). First, it is recommended that you keep pages that are related in a directory together... For example, in these docs, we keep all of the written documentation in the `./docs` directory and each of the sections in subdirectories like `./docs/ui-components` and `./docs/utilities`. This gives us an organization like:
+Sometimes you will want to create a page with many children (a section). First, it is recommended that you keep pages that are related in a directory together... For example, in these docs, we keep all of the written documentation in the `./docs` directory and each of the sections in subdirectories like `./docs/ui-components`. This gives us an organization like:
 
 ```
 +-- ..

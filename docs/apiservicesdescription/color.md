@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Color
-parent: Utilities
-nav_order: 3
+title: Permissions
+parent: Api Services Description
+nav_order: 4
 ---
 
 # Color Utilities

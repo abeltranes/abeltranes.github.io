@@ -6,7 +6,7 @@
   display: block;
   flex: 1 1 auto;
   color: $body-heading-color;
-  background-color: $sidebar-color;
+  background-color: white;
 
   @include mq(md) {
     position: absolute;
