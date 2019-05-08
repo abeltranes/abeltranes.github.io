@@ -13,15 +13,17 @@ The following cURL command shows how to generate an WSO2 access token using the 
 
 ```yaml
 curl -k -d "grant_type=client_credentials" \
-	    -H "Authorization: Basic Base64(consumer-key:consumer-secret)" \
+			-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \
 ```
-[https://api-aws.telepizza.com/token](https://api-aws.telepizza.com/token)
 
+<a href="https://api-aws.telepizza.com/token" style="margin-bottom: 30px; color: blue;">https://api-aws.telepizza.com/token</a>
+<br>
+<br>
 
-
-| ID | GET https://api-aws.telepizza.com/token       |
-| Description | Generate Acces Token       |
-| Entry| Header: Authorization: Basic <token> Content-Type: application/x-www-form-urlencoded Body grant_type: client_credentials |
-| Exit  | OK: Code 200 String with the fyle type       |
-| Actions | This service generate an WSO2 access token |
+| **ID** | GET https://api-aws.telepizza.com/token       |
+| **Description** | Generate Acces Token       |
+| **Entry**| **Header**: Authorization: Basic <token> Content-Type: application/x-www-form-urlencoded  Body grant_type: client_credentials |
+| | **Body** grant_type: client_credentials |
+| **Exit**  | **OK**: Code 200 String with the fyle type       |
+| **Actions** | This service generate an WSO2 access token |
 

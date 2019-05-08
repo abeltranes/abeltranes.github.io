@@ -79,10 +79,10 @@
 }
 
 .page-header {
-  background-color: $sidebar-color;
+  background-color: #E3E3E3;
 
   @include mq(md) {
-    background-color: $body-background-color;
+    background-color: #E3E3E3;
   }
 
   .main-content {
@@ -144,6 +144,6 @@ body {
     position: static;
     align-self: flex-end;
     justify-self: end;
-    background-color: white;
+    background-color: #E3E3E3;
   }
 }
