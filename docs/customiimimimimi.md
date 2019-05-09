@@ -1,7 +1,8 @@
 ---
 layout: default
-title: External Services
+title: External Services Description
 nav_order: 10
+header: true
 ---
 
 # Customization

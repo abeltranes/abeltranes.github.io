@@ -4,11 +4,15 @@
     {% for node in pages_list %}
       {% unless node.nav_exclude %}
         {% if node.parent == nil %}
-          <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}" style="font-size: 14px;">
+          <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
             {% if page.parent == node.title or page.grand_parent == node.title %}
               {% assign first_level_url = node.url | absolute_url %}
             {% endif %}
+            {% if node.header %}
+            <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}" style="font-size: 18px;">{{ node.title }}</a>
+            {% else %}
             <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+            {% endif %}
             {% if node.has_children %}
               {% assign children_list = site.html_pages | sort:"nav_order" %}
               <ul class="navigation-list-child-list ">

@@ -80,6 +80,9 @@
 
 .page-header {
   background-color: #E3E3E3;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
 
   @include mq(md) {
     background-color: #E3E3E3;

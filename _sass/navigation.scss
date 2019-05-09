@@ -6,7 +6,6 @@
   display: block;
   flex: 1 1 auto;
   color: $body-heading-color;
-  background-color: #E3E3E3;
 
   @include mq(md) {
     position: absolute;
@@ -16,6 +15,8 @@
     height: 60px;
     padding-top: $sp-4;
     border-bottom: $border $border-color;
+    background-color: #E3E3E3;
+    text-align: right;
   }
 }
 
@@ -80,6 +81,7 @@
   display: block;
   padding-top: $sp-1;
   padding-bottom: $sp-1;
+  font-size: 14px;
 
   &.active {
     font-weight: 600;
@@ -114,7 +116,7 @@
 // Breadcrumb nav
 .breadcrumb-nav {
   @include mq(md) {
-    margin-top: -$sp-4;
+    margin-top: 3em;
   }
 }
 
