@@ -79,13 +79,13 @@
 }
 
 .page-header {
-  background-color: #E3E3E3;
+  background-color: $sidebar-color;
   z-index: 1;
   width: 100%;
   position: fixed;
 
   @include mq(md) {
-    background-color: #E3E3E3;
+    background-color: $sidebar-color;
   }
 
   .main-content {
@@ -147,6 +147,6 @@ body {
     position: static;
     align-self: flex-end;
     justify-self: end;
-    background-color: #E3E3E3;
+    background-color: $sidebar-color;
   }
 }

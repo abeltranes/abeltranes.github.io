@@ -11,6 +11,7 @@ table {
   overflow-x: auto;
   border-collapse: separate;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 4px 14px rgba(0, 0, 0, 0.05);
+  text-align: center;
 
   @include mq(sm) {
     display: table;
@@ -33,6 +34,10 @@ td {
     border-left: 0;
   }
 }
+
+td:first-child { 
+  background-color: $sidebar-color 
+};
 
 thead,
 tbody:first-child {
