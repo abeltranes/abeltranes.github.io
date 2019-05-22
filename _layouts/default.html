@@ -1,79 +1,361 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
-<html lang="{{ site.lang | default: "en-US" }}">
-{% include head.html %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>BulkSales Services</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Lamoderna">
+	<meta name="copyright" content="©2019. Todos los derechos reservados.">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@">
+	<meta name="twitter:creator" content="@">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="http://">
+	<!-- Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="http://" />
+	<link rel="canonical" href="">
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+	<link rel="icon" type="image/png" href="./img/favicons/android-chrome-144x144.png" sizes="144x144">
+	<link rel="manifest" href="./img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#1a171c">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#1a171c">
+	<meta name="msapplication-TileImage" content="./img/favicons/mstile-150x150.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,700" rel="stylesheet">
+	<link href='./css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+
 <body>
+	<!-- Off canvas -->
+	<div class="m-off-canvas" id="off-canvas" style="left:-100%;">
+		<div class="m-off-canvas__header d-flex flex-column align-items-start justify-content-between">
+			<div class="d-flex align-items-center">
+				<div class="border-right pr-2 pr-lg-3">
+					<a href="/" class="m-navbar__brand m-navbar__brand--inverse">Logo</a>
+				</div>
+				<div class="pl-2 pl-lg-3">
+					<p class="m-logo__text text-base-dark m-0">APIS</p>
+				</div>
+			</div>
+			<span class="icon-close icon-close--off-canvas off-canvas-close"></span>
+			<div class="m-off-canvas__title offset-lg-3 mr-auto mr-lg-0">
+				<p class="text-base-dark mb-2 mb-lg-0">BulkSales Services</p>
+			</div>
+		</div>
+		<div class="bd-sidebar mt-0 border-0">
+			<nav class="bd-links" id="bd-docs-nav">
+				<div class="bd-toc-item active">
+					<a class="bd-toc-link mt-0" href="introduction.html">Introduction</a>
+					<ul class="nav bd-sidenav">
+						<li>
+							<a href="definitions-and-acronyms.html">Definitions and acronyms</a>
+						</li>
+					</ul>
+				</div>
+				<div class="bd-toc-item">
+					<a class="bd-toc-link mt-0" href="api-services-description.html">API Services Description</a>
+					<ul class="nav bd-sidenav">
+						<li class="active bd-sidenav-active">
+							<a href="generate-wso2-access-token.html">Generate WSO2 Access Token</a>
+						</li>
+						<li>
+							<a class="bd-list-collapse collapsed" data-toggle="collapse" href="#upload-files-off-canvas" role="button" aria-expanded="false" aria-controls="upload-files-off-canvas">Upload Files</a>
+							<ul class="bd-list-child list-unstyled collapse" id="upload-files-off-canvas">
+								<li>
+									<a href="get-the-excel-file-type.html">Get the Excel file type</a>
+								</li>
+								<li>
+									<a href="upload-excel-file-service.html">Upload Excel File Service</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="bd-list-collapse collapsed" data-toggle="collapse" href="#load-sales-off-canvas" role="button" aria-expanded="false" aria-controls="load-sales-off-canvas">Load Sales</a>
+							<ul class="bd-list-child list-unstyled collapse" id="load-sales-off-canvas">
+								<li>
+									<a href="get-currency.html">Get currency</a>
+								</li>
+								<li>
+									<a href="get-countries.html">Get countries</a>
+								</li>
+								<li>
+									<a href="save-sales.html">Save sales</a>
+								</li>
+								<li>
+									<a href="save-sales-background.html">Save Sales Background:</a>
+								</li>
+								<li>
+									<a href="edit-sales.html">Edit Sales</a>
+								</li>
+								<li>
+									<a href="get-sales.html">Get Sales</a>
+								</li>
+								<li>
+									<a href="get-sales-week.html">Get Sales Week</a>
+								</li>
+								<li>
+									<a href="get-sales-month.html">Get Sales Month</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="bd-list-collapse collapsed" data-toggle="collapse" href="#process-off-canvas" role="button" aria-expanded="false" aria-controls="process-off-canvas">Process</a>
+							<ul class="bd-list-child list-unstyled collapse" id="process-off-canvas">
+								<li>
+									<a href="get-user-process.html">Get User Process</a>
+								</li>
+								<li>
+									<a href="get-user-process-result.html">Get User Process Result</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="bd-list-collapse collapsed" data-toggle="collapse" href="#sales-consultation-off-canvas" role="button" aria-expanded="false" aria-controls="sales-consultation-off-canvas">Sales consultation</a>
+							<ul class="bd-list-child list-unstyled collapse" id="sales-consultation-off-canvas">
+								<li>
+									<a href="daily-and-monthly-sales.html">Daily and monthly sales</a>
+								</li>
+								<li>
+									<a href="weekly-sales.html">Weekly sales</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- Off canvas -->
+	<header>
+		<div class="l-header fixed-top">
+			<div class="bg-base-dark">
+				<!-- Search input -->
+				<div class="m-search align-items-center justify-content-between bg-base-light" id="search-box" style="display: none;">
+					<form class="w-100">
+						<div class="form-group m-0">
+							<input type="text" class="form-control" placeholder="Busca..." autocomplete="off">
+						</div>
+					</form>
+					<a href="#" class="icon-close" id="search-close" data-dismiss="modal" aria-label="Close"></a>
+				</div>
+				<!-- Search input -->
+				<div class="px-3">
+					<div class="m-navbar d-flex justify-content-start justify-content-lg-between align-items-end align-items-lg-center">
+						<div class="m-logo d-flex align-items-center">
+							<div class="border-right pr-2 pr-lg-3">
+								<a href="/" class="m-navbar__brand">Logo</a>
+							</div>
+							<div class="pl-2 pl-lg-3">
+								<p class="m-logo__text text-base-light m-0">APIS</p>
+							</div>
+						</div>
+						<div class="d-flex align-items-center">
+							<button class="navbar-toggler d-inline-block d-lg-none" id="btn-off-canvas" type="button">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="m-navbar__title offset-lg-3 mr-auto mr-lg-0">
+							<p class="text-base-light mb-2 mb-lg-0">BulkSales Services</p>
+						</div>
+						<div class="d-flex align-items-center">
+							<a href="#" id="show-search-box" class="btn btn-link"><img src="./img/icons/icon-search.svg" width="19" height="19" alt=""><span class="d-none d-lg-inline-block">&nbsp;Buscar</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-  <div class="page-wrap">
-    <div class="side-bar">
-      <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight" style="width: 100%;">BULKSALES SERVICES</a>
-      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
-      <div class="navigation main-nav js-main-nav">
-        {% include nav.html %}
-      </div>
-      <!-- <footer role="contentinfo" class="site-footer" style="width: 100%; text-align: right;">
-        <h2 style="font-size: 16px;">BulkSales Services</h2>
-        <p style="font-size: 12px;">Copyright 2018 - BulkSales Services - All rights reserved</p>
-      </footer> -->
-    </div>
-    <div class="main-content-wrap js-main-content" tabindex="0">
-      <div class="page-header">
-        <div class="main-content">
-          {% if site.search_enabled != nil %}
-          <div class="search js-search">
-            <!-- <div class="search-input-wrap">
-              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Buscar" aria-label="Search {{ site.title }}" autocomplete="off">
-              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
-            </div> -->
-            <div class="js-search-results search-results-wrap"></div>
-          </div>
-          {% endif %}
-          <!-- {% if site.aux_links != nil %}
-            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
-              {% for link in site.aux_links %}
-                <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %}"><a href="{{ link.last }}">{{ link.first }}</a></li>
-              {% endfor %}
-            </ul>
-          {% endif %} -->
-        </div>
-      </div>
-      <div class="main-content">
-        {% unless page.url == "/" %}
-          {% if page.parent %}
-            <nav class="breadcrumb-nav">
-              <ol class="breadcrumb-nav-list">
-                {% if page.grand_parent %}
-                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
-                  <li class="breadcrumb-nav-list-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
-                {% else %}
-                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
-                {% endif %}
-                <li class="breadcrumb-nav-list-item"><span>{{ page.title }}</span></li>
-              </ol>
-            </nav>
-          {% endif %}
-        {% endunless %}
-        <div id="main-content" class="page-content" role="main">
-          {{ content }}
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-lg-3 col-xl-2 bd-sidebar d-none d-lg-block">
+				<nav class="bd-links" id="bd-docs-nav">
+					<div class="bd-toc-item active">
+						<a class="bd-toc-link mt-0" href="introduction.html">Introduction</a>
+						<ul class="nav bd-sidenav">
+							<li>
+								<a href="definitions-and-acronyms.html">Definitions and acronyms</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bd-toc-item">
+						<a class="bd-toc-link mt-0" href="api-services-description.html">API Services Description</a>
+						<ul class="nav bd-sidenav">
+							<li class="active bd-sidenav-active">
+								<a href="generate-wso2-access-token.html">Generate WSO2 Access Token</a>
+							</li>
+							<li>
+								<a class="bd-list-collapse collapsed" data-toggle="collapse" href="#upload-files" role="button" aria-expanded="false" aria-controls="upload-files">Upload Files</a>
+								<ul class="bd-list-child list-unstyled collapse" id="upload-files">
+									<li>
+										<a href="get-the-excel-file-type.html">Get the Excel file type</a>
+									</li>
+									<li>
+										<a href="upload-excel-file-service.html">Upload Excel File Service</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="bd-list-collapse collapsed" data-toggle="collapse" href="#load-sales" role="button" aria-expanded="false" aria-controls="load-sales">Load Sales</a>
+								<ul class="bd-list-child list-unstyled collapse" id="load-sales">
+									<li>
+										<a href="get-currency.html">Get currency</a>
+									</li>
+									<li>
+										<a href="get-countries.html">Get countries</a>
+									</li>
+									<li>
+										<a href="save-sales.html">Save sales</a>
+									</li>
+									<li>
+										<a href="save-sales-background.html">Save Sales Background:</a>
+									</li>
+									<li>
+										<a href="edit-sales.html">Edit Sales</a>
+									</li>
+									<li>
+										<a href="get-sales.html">Get Sales</a>
+									</li>
+									<li>
+										<a href="get-sales-week.html">Get Sales Week</a>
+									</li>
+									<li>
+										<a href="get-sales-month.html">Get Sales Month</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="bd-list-collapse collapsed" data-toggle="collapse" href="#process" role="button" aria-expanded="false" aria-controls="process">Process</a>
+								<ul class="bd-list-child list-unstyled collapse" id="process">
+									<li>
+										<a href="get-user-process.html">Get User Process</a>
+									</li>
+									<li>
+										<a href="get-user-process-result.html">Get User Process Result</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="bd-list-collapse collapsed" data-toggle="collapse" href="#sales-consultation" role="button" aria-expanded="false" aria-controls="sales-consultation">Sales consultation</a>
+								<ul class="bd-list-child list-unstyled collapse" id="sales-consultation">
+									<li>
+										<a href="daily-and-monthly-sales.html">Daily and monthly sales</a>
+									</li>
+									<li>
+										<a href="weekly-sales.html">Weekly sales</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<main class="col-12 col-lg-9 col-xl-6 offset-xl-1 bd-content" role="main">
+				<nav aria-label="breadcrumb">
+					<ol class="m-breadcrumb breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Grupo Telepizza APIs</a></li>
+						<li class="breadcrumb-item"><a href="#">BulkSales Services</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Generate WSO2 Access Token</li>
+					</ol>
+				</nav>
+				<h1 class="bd-title" id="content">Generate WSO2 Access Token</h1>
+				<p>In order to invoke the BulkSales API published in WSO2, it is necessary to previously generate an access token.</p>
+				<p>The following cURL command shows how to generate an WSO2 access token using the Client Credentials grant type:</p>
+				<div class="bd-callout bd-callout-info">
+					<p>
+						<span class="d-inline-block mb-3">curl -k -d "grant_type=client_credentials" \</span>
+						<span class="d-inline-block ml-3">-H "Authorization: Basic Base64(consumer-key:consumer-secret)" \</span>
+					</p>
+				</div>
+				<p><a href="https://api-aws.telepizza.com/token" class="bd-link">https://api-aws.telepizza.com/token</a></p>
+				<table class="table table-bordered mt-5">
+					<tbody>
+						<tr>
+							<th scope="row" class="text-center">ID</th>
+							<td><span class="d-block text-uppercase">Get</span> <a href="https://api-aws.telepizza.com/token" class="bd-link">https://api-aws.telepizza.com/token</a></td>
+						</tr>
+						<tr>
+							<th scope="row" class="text-center">Description</th>
+							<td>Generate Access Token</td>
+						</tr>
+						<tr>
+							<th scope="row" class="text-center">Entry</th>
+							<td>
+								<span class="d-block"><strong>OK:</strong> Code 200</span>
+								<span class="d-block">String with the fyle type</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="text-center">Exit</th>
+							<td>
+								<span class="d-block"><strong>Header</strong></span>
+								<span class="d-block">Authorization: Basic <span>
+										<</span>token <span>>
+									</span></span>
+								<span class="d-block">Content-Type: application/x-www-form-urlencoded</span>
+								<span class="d-block"><strong>Body</strong></span>
+								<span class="d-block">grant_type: client_credentials</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="text-center">Actions</th>
+							<td>This service generate an WSO2 access token.</td>
+						</tr>
+					</tbody>
+				</table>
+			</main>
+		</div>
+	</div>
+	<footer>
+		<div class="l-footer">
+			<div class="m-footer bg-base-dark">
+				<div class="px-3">
+					<div class="row m-padding--small">
+						<div class="col">
+							<div class="m-logo m-logo--footer d-flex align-items-center">
+								<div class="border-right pr-2 pr-lg-3">
+									<a href="/" class="m-navbar__brand">Logo</a>
+								</div>
+								<div class="pl-2 pl-lg-3">
+									<p class="m-logo__text text-base-light m-0">APIS</p>
+								</div>
+								<div class="pl-4">
+									<p class="font-size-small text-base-light m-0">Copyright © 2018. - All rights reserved</p>
+								</div>
+							</div>
 
-          {% if page.has_children == true and page.has_toc != false %}
-          <hr>
-          <h2 class="text-delta">Table of contents</h2>
-          {% assign children_list = site.pages | sort:"nav_order" %}
-          <ul>
-            {% for child in children_list %}
-              {% if child.parent == page.title and child.title != page.title %}
-              <li>
-                <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
-              </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
+	<div class="pr_off-canvas-mask" style="display:none;"></div>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous "></script>
+	<script src="js/utils.js"></script>
 </body>
+
 </html>
