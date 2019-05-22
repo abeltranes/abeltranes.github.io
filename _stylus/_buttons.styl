@@ -1,0 +1,58 @@
+button
+	&:focus
+		outline none
+
+.btn
+	position relative
+	padding 1rem
+	border-color transparent
+	border-radius $border-radius-0
+	box-shadow $shadow
+	transition all 0.3s ease
+	font-family $font-family-accents
+	font-size $font-size-base-large
+	line-height 1
+	display flex
+	&:hover
+	&:focus
+	&:active:focus
+	&.active:focus
+	&.focus
+	&:active.focus
+	&.active.focus
+		border-color transparent
+		outline none
+		text-decoration none!important
+	@media (max-width:$breakpoint-lg)		
+		padding 0.8rem
+		top 0
+		right 0
+		display flex
+		align-items center
+		justify-content center
+		border 0
+		cursor pointer
+
+.btn-primary
+	background $primary
+	color $base-light!important
+	&:hover
+	&:focus
+		background $base-light
+		color $primary!important
+	&:not(:disabled):not(.disabled).active
+	&:not(:disabled):not(.disabled):active
+		background $base-light
+		color $primary!important
+
+.btn-link
+	font-size $font-size-medium
+	color $base-dark
+	&:hover
+	&:focus
+	&:active:focus
+	&.active:focus
+	&.focus
+	&:active.focus
+	&.active.focus
+		color $base-dark

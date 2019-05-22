@@ -1,0 +1,132 @@
+// S I D E B A R
+
+// Left side navigation
+.bd-sidebar
+	order 0
+	border-right solid 1px #CDCDCD
+	@media (min-width:$breakpoint-lg)
+		position sticky
+		top 6rem
+		z-index 1000
+		height calc(100vh - 6rem)
+	@media (min-width:$breakpoint-xl)
+		flex 0 1 320px
+
+.bd-links
+	margin-right -15px
+	margin-left -15px
+	@media (min-width:$breakpoint-lg)
+		display block !important // Override collapse behaviors
+		position sticky
+		max-height calc(100vh - 6rem)
+		overflow-y auto
+
+.bd-sidenav
+	display none
+
+.bd-toc-link
+	display block
+	margin-top 1.625rem // 26px
+	margin-bottom 1rem
+	font-size $font-size-medium!important
+	line-height 1.2
+	color $base-dark
+	&:hover
+	&:focus
+		color #81BDF1
+		text-decoration none
+
+.bd-toc-item
+	padding 2rem
+	margin-bottom 2rem
+	border-bottom 0.0625rem solid #CDCDCD
+	&.active
+		margin-bottom 1rem
+	&:not(:first-child)
+		margin-top 1rem
+	> .bd-toc-link
+			color $base-dark
+		&:hover
+		&:focus
+			background-color transparent
+	> .bd-sidenav
+			display block
+
+// All levels of nav
+.bd-sidebar
+	.nav
+		li
+			a
+				display block
+				padding 0.5625rem 1rem 0.5625rem 0 // 9px 16px 9px 0
+				font-size $font-size-base-reduced
+				line-height 1.2
+				color $base-dark
+				&:hover
+					color #81BDF1
+					text-decoration none
+					background-color transparent
+			&.active
+				a
+					color #81BDF1!important
+					font-weight bold
+
+.bd-sidebar .nav > .active > a
+.bd-sidebar .nav > .active:hover > a
+	color $base-dark
+	background-color transparent
+	font-weight bold
+
+.bd-list-collapse
+	position relative
+	display block
+	padding 1.25rem 4.375rem //20px 70px
+	padding-right 10%
+	color $base-dark
+	@media only screen and (max-width: $breakpoint-lg)
+		padding 1.25rem 1.875rem //20px 30px
+		padding-right 10%
+	@media only screen and (max-width: $breakpoint-sm)
+		padding-right 15%
+	&:hover
+		&:after
+			border-left solid 0.0625rem #81bdf1!important
+			border-top solid 0.0625rem #81bdf1!important
+	&:after
+		position absolute
+		content ''
+		top 65%
+		transform translateY(-80%) rotate(45deg)
+		left 8.125rem //130px
+		width 0.5rem
+		height 0.5rem
+		border-left solid 0.0625rem $base-dark
+		border-top solid 0.0625rem $base-dark
+		@media only screen and (max-width: $breakpoint-sm)
+			width 0.5rem
+			height 0.5rem
+
+	&.collapsed
+		&:hover
+			&:after
+				border-right solid 0.0625rem #81bdf1!important
+				border-bottom solid 0.0625rem #81bdf1!important
+		&:after
+			position absolute
+			content ''
+			top 50% !important
+			transform translateY(-80%) rotate(45deg)
+			left 8.125rem //130px
+			width 0.5rem
+			height 0.5rem
+			border-right solid 0.0625rem $base-dark
+			border-bottom solid 0.0625rem $base-dark
+			border-left solid 0 transparent !important
+			border-top solid 0 transparent !important
+			@media only screen and (max-width: $breakpoint-sm)
+				width 0.5rem
+				height 0.5rem
+
+.bd-list-child
+	padding-left 0.5rem
+	border-left 0.0625rem solid #D8D8D8

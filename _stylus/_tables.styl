@@ -1,0 +1,17 @@
+//
+// Basic Bootstrap table
+//
+.table
+	th
+		background-color $secondary-lighter
+		@media (min-width:$breakpoint-lg)
+			min-width 16.25rem // 260px
+	th
+	td
+		@media (min-width:$breakpoint-lg)
+			padding 1.25rem // 20px
+
+.table
+	td
+		word-break break-word!important
+		overflow-wrap break-word!important

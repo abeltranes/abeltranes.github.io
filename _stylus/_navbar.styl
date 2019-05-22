@@ -1,0 +1,98 @@
+// Contents
+//
+// Navbar
+// Navbar brand
+// Navbar nav
+// Navbar text
+// Navbar divider
+// Responsive navbar
+// Navbar position
+// Navbar themes
+
+// Navbar brand
+//
+// Used for brand, project, or site names.
+.navbar
+	padding-top 1.5625rem // 25px
+	padding-bottom 1.5625rem // 25px
+	@media (min-width:$breakpoint-md)
+		padding-right 0
+		padding-left 0
+	.btn-link
+		color $base-dark
+		@media (min-width:$breakpoint-md)
+			padding-right 0
+
+// Navbar brand
+//
+// Used for brand, project, or site names.
+.navbar-brand
+	font-size $font-size-large
+	text-transform uppercase
+
+// Navbar toggler
+.navbar-toggler
+	margin 0 0.5rem 0 -0.8rem
+	border-radius 0.25rem
+	padding 0.8rem
+	position relative
+	width 3rem
+	height 3rem
+	border 0px solid transparent
+	.icon-bar
+		position relative
+		transition all 0.5s ease-out
+		background $base-light
+		height 0.125rem
+		width 100%
+		display block
+	.icon-bar + .icon-bar
+		margin-top 0.25rem
+
+// Off canvas
+.m-off-canvas
+	top 0
+	position fixed
+	height 100%
+	width 40%
+	background $base-light
+	padding 0
+	z-index 9999
+	overflow-y auto
+	@media (max-width:$breakpoint-md)
+		width 50%
+	@media (max-width:$breakpoint-sm)
+		width 80%
+
+	.bd-sidebar
+		overflow-y auto
+		height 100%
+		padding 1rem 0
+	&__header
+		background $base-light
+		position sticky
+		height 6rem
+		width auto
+		top 0
+		padding 0.625rem 2rem
+		border-bottom 0.0625rem solid #cdcdcd
+		@media (max-width:$breakpoint-sm)
+			height 5rem
+	&__title
+		font-family 'Roboto Mono'
+		font-size $font-size-base
+		color $base-dark
+		text-transform uppercase
+		margin 0.8rem 0 0 0
+
+.off-canvas-mask
+	opacity 1
+	display block!important
+	z-index 1050
+	background-color rgba(0,0,0,0.8)
+	bottom 0
+	left 0
+	position fixed
+	right 0
+	top 0
+	transition opacity .2s linear

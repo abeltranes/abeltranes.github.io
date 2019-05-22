@@ -1,0 +1,206 @@
+@import 'nib'
+@import '_variables'
+@import '_type'
+@import '_scrollbar'
+@import '_sidebar'
+@import '_buttons'
+@import '_breadcrumb'
+@import '_callouts'
+@import '_forms'
+@import '_input-group'
+@import '_nav'
+@import '_navbar'
+@import '_tables'
+
+/*------------------------------
+GENERAL STYLES
+------------------------------*/
+*
+*:link
+	-webkit-tap-highlight-color rgba(0, 0, 0, 0)
+
+body
+	margin 0
+	-webkit-backface-visibility hidden
+	font-family $font-family-base
+	color $base-dark
+
+.bd-sidebar
+.bd-content
+	margin-top 6rem
+	@media (max-width:$breakpoint-sm)
+		margin-top 5rem
+
+:focus
+a:focus
+	outline 0
+	outline 0 auto -webkit-focus-ring-color
+
+a
+	transition all 0.3s ease
+	color $primary-dark
+
+.icon-close
+	position absolute
+	z-index 1050
+	top auto
+	right 1rem
+	width 1.5rem
+	height 1.5rem
+	transition all 0.3s ease
+	&:before
+	&:after
+		content ''
+		position absolute
+		height 0.15rem
+		width 100%
+		top 50%
+		left 0
+		margin-top -0.0625rem
+		background $base-dark
+	&:before
+		transform(rotate(-45deg))
+	&:after
+		transform(rotate(45deg))
+	&:hover
+	&:focus
+		transform(rotate(-90deg))
+
+.icon-close--off-canvas
+	position absolute
+	right 0.625rem
+	width 0.875rem
+	height 0.875rem
+
+.bg-accent
+	background-color $accent!important
+
+.bg-base-dark
+	background-color $base-dark!important
+
+.bg-base-light
+	background-color $base-light!important
+
+.bg-secondary-dark
+	background-color $secondary-dark!important
+
+.bg-secondary-darker
+	background-color $secondary-dark!important
+
+.bg-secondary-light
+	background-color $secondary-light!important
+
+.bg-secondary-lighter
+	background-color $secondary-light!important
+
+/*------------------------------
+HEADER
+------------------------------*/
+.m-logo
+	position absolute
+	.border-right
+		border-right 0.125rem solid #8C8B8D!important
+	@media (max-width:$breakpoint-lg)
+		top 0.625rem
+		left 3.25rem
+
+.m-logo__text
+	font-size 1.3125rem //21px
+	@media (max-width:$breakpoint-sm)
+		font-size $font-size-small
+
+.m-logo--footer
+	position relative
+	left 0
+
+.m-navbar
+	height 6rem // 96px
+	position relative
+	a
+		color $base-light
+		&:hover
+		&:focus
+			color $base-light
+			text-decoration none
+	@media (max-width:$breakpoint-sm)
+		height 5rem // 80px
+
+.m-navbar__brand
+	width 6.125rem //98px
+	height 2.5rem //40px
+	background url(../img/logo-white.png) no-repeat center center/contain
+	text-indent -9999px
+	position relative
+	top 0
+	display block
+	@media (max-width:$breakpoint-sm)
+		width 3.6875rem //59px
+		height 1.5rem //24px
+
+.m-navbar__brand--inverse
+	background url(../img/logo-black.png) no-repeat center center/contain
+	@media (max-width:$breakpoint-sm)
+		width 3.6875rem //59px
+		height 1.5rem //24px
+
+.m-navbar__title
+	position absolute
+	p
+		font-size $font-size-large
+		margin-left 0.5rem!important //15px
+	@media (max-width:$breakpoint-lg)
+		position relative
+		p
+			font-size $font-size-medium
+
+.m-navbar__item
+	&:not(:last-child)
+		margin-right 0!important
+	a
+		padding-left 0!important
+
+.m-navbar__link
+	padding-right 1.625rem // 26px
+	padding-left 1.625rem // 26px
+	font-size $font-size-medium
+	@media (max-width:$breakpoint-sm)
+		padding-right 0.5rem
+		padding-left 0.5rem
+		font-size 1rem
+
+/*------------------------------
+MAIN
+------------------------------*/
+.m-padding--large
+	padding-top 5.875rem // 94px
+	padding-bottom 5.875rem // 94px
+	@media (max-width:$breakpoint-sm)
+		padding-top 5rem // 80px
+		padding-bottom 5rem // 80px
+
+.m-padding--small
+	padding-top 2.25rem // 36px
+	padding-bottom 2.25rem // 36px
+	@media (max-width:$breakpoint-sm)
+		padding-top 1.625rem // 26px
+		padding-bottom 1.625rem // 26px
+
+.bd-content
+	padding-top 2rem // 32px
+	padding-bottom 5.875rem // 94px
+	@media (max-width:$breakpoint-sm)
+		padding-top 2rem // 32px
+		padding-bottom 2rem // 32px
+
+.bd-title
+	font-size $font-size-extralarge
+	margin-bottom 1.25rem // 20px
+
+.bd-link
+	padding-top 3.3125rem // 53px
+	padding-bottom 3.3125rem // 53px
+	font-family $font-family-accents
+
+/*------------------------------
+FOOTER
+------------------------------*/
