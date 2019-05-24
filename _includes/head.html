@@ -1,22 +1,28 @@
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{{ page.title }} - {{ site.title }}</title>
-	<meta name="description" content="{{ page.description }}">
-	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.ico">
-	<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-	<link rel="icon" type="image/png" href="./img/favicons/android-chrome-144x144.png" sizes="144x144">
-	<link rel="manifest" href="./img/favicons/site.webmanifest">
-	<link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#1a171c">
-	<meta name="theme-color" content="#ffffff">
-	<meta name="msapplication-TileColor" content="#1a171c">
-	<meta name="msapplication-TileImage" content="./img/favicons/mstile-150x150.png">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | absolute_url }}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  {% if page.description %}
+  <meta name="Description" content="{{ page.description }}">
+  {% endif %}
+
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/just-the-docs.css" | absolute_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+  {% if site.ga_tracking != nil %}
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', '{{ site.ga_tracking }}', '{{ site.url }}');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  {% endif %}
+
+  {% if site.search_enabled != nil %}
+    <script type="text/javascript" src="{{ "/assets/js/vendor/lunr.min.js" | absolute_url }}"></script>
+  {% endif %}
+  <script type="text/javascript" src="{{ "/assets/js/just-the-docs.js" | absolute_url }}"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
 </head>
